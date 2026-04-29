@@ -1,97 +1,120 @@
 import React from 'react';
 import Link from 'next/link';
-import { ShieldCheck, Cpu, Map, Clock, Video, Lock, Radio, Wrench, ArrowRight, CheckCircle2 } from 'lucide-react';
+import { ArrowRight, ShieldCheck, Video, Radio, Lock, Wrench, Map, Clock, Cpu, CheckCircle2 } from 'lucide-react';
 
 export default function Home() {
   return (
     <>
-      {/* Hero Section */}
+      {/* Hero Banner - Premium com Imagem */}
       <section style={{ 
         position: 'relative', 
-        padding: '8rem 0', 
-        minHeight: '85vh',
+        padding: '7rem 0 10rem 0', 
+        minHeight: '100vh',
         display: 'flex',
         alignItems: 'center',
-        background: 'linear-gradient(135deg, var(--c-black) 0%, var(--c-dark-blue) 100%)',
+        backgroundImage: 'url("/images/banner_farmacia_antenas.jpg")',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundAttachment: 'fixed',
         overflow: 'hidden'
       }}>
-        {/* Background glow effects */}
-        <div style={{ position: 'absolute', top: '-10%', right: '-5%', width: '600px', height: '600px', background: 'radial-gradient(circle, var(--c-neon-blue-glow) 0%, transparent 70%)', borderRadius: '50%', filter: 'blur(60px)', zIndex: 0 }}></div>
-        <div style={{ position: 'absolute', bottom: '-20%', left: '-10%', width: '500px', height: '500px', background: 'radial-gradient(circle, rgba(10,37,64,0.8) 0%, transparent 70%)', borderRadius: '50%', filter: 'blur(50px)', zIndex: 0 }}></div>
+        {/* Dark overlay for text readability */}
+        <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', background: 'linear-gradient(to right, rgba(10, 25, 47, 0.95) 0%, rgba(10, 25, 47, 0.7) 100%)', zIndex: 0 }}></div>
         
         <div className="container" style={{ position: 'relative', zIndex: 1 }}>
           <div style={{ maxWidth: '800px' }} className="animate-fade-in">
-            <div style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', padding: '0.25rem 0.75rem', borderRadius: '20px', background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.1)', marginBottom: '1.5rem' }}>
-              <ShieldCheck size={16} color="var(--c-neon-blue)" />
-              <span style={{ fontSize: '0.875rem', fontWeight: 600, color: 'var(--c-metallic-light)' }}>Padrão Enterprise em Segurança</span>
+            <div style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', padding: '0.4rem 1rem', borderRadius: '30px', background: 'rgba(255,255,255,0.1)', border: '1px solid rgba(255,255,255,0.2)', marginBottom: '2rem', backdropFilter: 'blur(10px)' }}>
+              <ShieldCheck size={18} color="var(--c-neon-blue)" />
+              <span style={{ fontSize: '0.875rem', fontWeight: 600, color: 'var(--c-white)', letterSpacing: '0.5px' }}>Padrão Enterprise em Segurança Eletrônica</span>
             </div>
             
-            <h1 style={{ fontSize: '4rem', marginBottom: '1.5rem', letterSpacing: '-1px' }}>
-              Especialistas em Segurança Eletrônica <span style={{ color: 'var(--c-neon-blue)' }}>Corporativa</span> para Redes Varejistas
+            <h1 style={{ fontSize: '4.5rem', marginBottom: '1.5rem', color: 'var(--c-white)', lineHeight: '1.1' }}>
+              Proteção inteligente para <span style={{ color: 'var(--c-neon-blue)' }}>Redes Varejistas</span>
             </h1>
             
-            <p style={{ fontSize: '1.25rem', color: 'var(--c-metallic-light)', marginBottom: '2.5rem', maxWidth: '600px', lineHeight: '1.8' }}>
-              Implantação, manutenção e suporte técnico com cobertura nacional e atendimento especializado para garantir a proteção do seu negócio.
+            <p style={{ fontSize: '1.25rem', color: 'rgba(255,255,255,0.8)', marginBottom: '3rem', maxWidth: '650px', lineHeight: '1.8' }}>
+              Implantação, manutenção e suporte técnico com cobertura nacional. Tecnologia de ponta para otimizar sua operação e zerar suas perdas.
             </p>
             
             <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
-              <Link href="/orcamento" className="btn btn-primary">
-                Solicitar Orçamento
-                <ArrowRight size={18} />
+              <Link href="/orcamento" className="btn btn-primary" style={{ fontSize: '1.125rem', padding: '1rem 2.5rem' }}>
+                Falar com Engenharia
+                <ArrowRight size={20} />
               </Link>
-              <Link href="https://wa.me/5511999999999" className="btn btn-secondary">
-                Falar no WhatsApp
+              <Link href="https://wa.me/5511998937891" target="_blank" rel="noreferrer" className="btn btn-white" style={{ fontSize: '1.125rem', padding: '1rem 2.5rem' }}>
+                WhatsApp Corporativo
               </Link>
             </div>
           </div>
+        </div>
 
-          {/* Key Metrics */}
-          <div style={{ marginTop: '5rem', display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '2rem', borderTop: '1px solid var(--c-metallic-dark)', paddingTop: '2rem' }}>
-            <div>
-              <h3 style={{ fontSize: '2.5rem', color: 'var(--c-white)', marginBottom: '0.5rem' }}>+15<span style={{ color: 'var(--c-neon-blue)', fontSize: '1.5rem' }}>anos</span></h3>
-              <p style={{ color: 'var(--c-metallic)', fontSize: '0.875rem', textTransform: 'uppercase', letterSpacing: '1px', fontWeight: 600 }}>De Mercado</p>
-            </div>
-            <div>
-              <h3 style={{ fontSize: '2.5rem', color: 'var(--c-white)', marginBottom: '0.5rem' }}>99.9<span style={{ color: 'var(--c-neon-blue)', fontSize: '1.5rem' }}>%</span></h3>
-              <p style={{ color: 'var(--c-metallic)', fontSize: '0.875rem', textTransform: 'uppercase', letterSpacing: '1px', fontWeight: 600 }}>SLA Cumprido</p>
-            </div>
-            <div>
-              <h3 style={{ fontSize: '2.5rem', color: 'var(--c-white)', marginBottom: '0.5rem' }}>100<span style={{ color: 'var(--c-neon-blue)', fontSize: '1.5rem' }}>%</span></h3>
-              <p style={{ color: 'var(--c-metallic)', fontSize: '0.875rem', textTransform: 'uppercase', letterSpacing: '1px', fontWeight: 600 }}>Cobertura Nacional</p>
-            </div>
-            <div>
-              <h3 style={{ fontSize: '2.5rem', color: 'var(--c-white)', marginBottom: '0.5rem' }}>+500</h3>
-              <p style={{ color: 'var(--c-metallic)', fontSize: '0.875rem', textTransform: 'uppercase', letterSpacing: '1px', fontWeight: 600 }}>Clientes Atendidos</p>
+        {/* Floating Numbers Section */}
+        <div style={{ position: 'absolute', bottom: '0', left: '0', width: '100%', background: 'rgba(5, 5, 5, 0.4)', borderTop: '1px solid rgba(255,255,255,0.1)', backdropFilter: 'blur(10px)' }}>
+          <div className="container">
+            <div style={{ display: 'flex', justifyContent: 'space-between', padding: '2rem 0' }}>
+              <div>
+                <h3 style={{ fontSize: '2rem', color: 'var(--c-white)', marginBottom: '0.25rem' }}>+15 <span style={{ fontSize: '1rem', color: 'var(--c-neon-blue)', fontWeight: 600 }}>anos</span></h3>
+                <p style={{ color: 'rgba(255,255,255,0.6)', fontSize: '0.875rem', fontWeight: 500, textTransform: 'uppercase', letterSpacing: '1px' }}>De Experiência</p>
+              </div>
+              <div>
+                <h3 style={{ fontSize: '2rem', color: 'var(--c-white)', marginBottom: '0.25rem' }}>99.9<span style={{ fontSize: '1rem', color: 'var(--c-neon-blue)', fontWeight: 600 }}>%</span></h3>
+                <p style={{ color: 'rgba(255,255,255,0.6)', fontSize: '0.875rem', fontWeight: 500, textTransform: 'uppercase', letterSpacing: '1px' }}>SLA Cumprido</p>
+              </div>
+              <div>
+                <h3 style={{ fontSize: '2rem', color: 'var(--c-white)', marginBottom: '0.25rem' }}>100<span style={{ fontSize: '1rem', color: 'var(--c-neon-blue)', fontWeight: 600 }}>%</span></h3>
+                <p style={{ color: 'rgba(255,255,255,0.6)', fontSize: '0.875rem', fontWeight: 500, textTransform: 'uppercase', letterSpacing: '1px' }}>Cobertura Nacional</p>
+              </div>
+              <div>
+                <h3 style={{ fontSize: '2rem', color: 'var(--c-white)', marginBottom: '0.25rem' }}>+500</h3>
+                <p style={{ color: 'rgba(255,255,255,0.6)', fontSize: '0.875rem', fontWeight: 500, textTransform: 'uppercase', letterSpacing: '1px' }}>Clientes Enterprise</p>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Services Section */}
-      <section className="section-padding" style={{ backgroundColor: 'var(--c-black-light)' }}>
+      {/* Seção de Clientes */}
+      <section style={{ padding: '3rem 0', background: 'var(--c-white)', borderBottom: '1px solid var(--c-border-light)' }}>
         <div className="container">
-          <div style={{ textAlign: 'center', marginBottom: '4rem', maxWidth: '700px', margin: '0 auto 4rem auto' }}>
-            <h2 style={{ fontSize: '2.5rem', marginBottom: '1rem' }}>Soluções em <span className="text-neon">Segurança Tecnológica</span></h2>
-            <p style={{ color: 'var(--c-metallic-light)' }}>Tecnologia de ponta e infraestrutura robusta para prevenir perdas e proteger ativos em todo o território nacional.</p>
+          <p style={{ textAlign: 'center', color: 'var(--c-metallic)', fontSize: '0.875rem', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '1px', marginBottom: '2rem' }}>
+            Grandes redes confiam em nossa tecnologia
+          </p>
+          <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '4rem', flexWrap: 'wrap' }}>
+            <img src="/images/logo_marisa.png" alt="Marisa" className="client-logo" style={{ height: '30px' }} />
+            <img src="/images/logo_cea.svg" alt="C&A" className="client-logo" style={{ height: '35px' }} />
+            <img src="/images/logo_caedu.png" alt="Caedu" className="client-logo" style={{ height: '35px' }} />
+            <img src="/images/logo_drogaria_total.png" alt="Drogaria Total" className="client-logo" style={{ height: '40px' }} />
+            <img src="/images/logo_calvin_klein.png" alt="Calvin Klein" className="client-logo" style={{ height: '25px' }} />
+            <img src="/images/logo_chanel.png" alt="Chanel" className="client-logo" style={{ height: '30px' }} />
+          </div>
+        </div>
+      </section>
+
+      {/* Services Section - Clean and Professional */}
+      <section className="section-padding">
+        <div className="container">
+          <div style={{ textAlign: 'center', marginBottom: '5rem', maxWidth: '800px', margin: '0 auto 5rem auto' }}>
+            <h2 style={{ fontSize: '3rem', marginBottom: '1.25rem' }}>Soluções de <span className="text-primary">Alta Performance</span></h2>
+            <p style={{ color: 'var(--c-metallic)', fontSize: '1.125rem' }}>Infraestrutura e sistemas inteligentes projetados para operações críticas. Reduza vulnerabilidades e otimize a gestão do seu patrimônio.</p>
           </div>
 
           <div className="grid grid-cols-3">
             {[
-              { title: 'CFTV Corporativo', desc: 'Sistemas de videomonitoramento de alta resolução com inteligência artificial para análise de comportamento e prevenção de perdas.', icon: <Video size={32} /> },
-              { title: 'Antenas Antifurto', desc: 'Soluções EAS modernas e discretas, com alta taxa de detecção e integração com sistemas de gestão de loja.', icon: <Radio size={32} /> },
-              { title: 'Controle de Acesso', desc: 'Catracas, biometria, reconhecimento facial e gestão centralizada para controle de fluxo de funcionários e visitantes.', icon: <Lock size={32} /> },
-              { title: 'Manutenção Preventiva', desc: 'Rotinas rigorosas de inspeção para garantir o funcionamento contínuo de todos os equipamentos de segurança.', icon: <Wrench size={32} /> },
-              { title: 'Gestão de Varejo', desc: 'Integração de sistemas de segurança com tecnologias para otimização de layout e redução de rupturas.', icon: <Map size={32} /> },
-              { title: 'Suporte 24/7', desc: 'NOC dedicado operando 24 horas por dia para monitoramento de health check de equipamentos e resposta rápida.', icon: <Clock size={32} /> }
+              { title: 'CFTV Inteligente', desc: 'Sistemas de videomonitoramento de alta resolução com IA para análise de comportamento e identificação facial.', icon: <Video size={32} />, link: '/servicos/cftv-inteligente' },
+              { title: 'Antenas Antifurto', desc: 'Soluções EAS discretas e modernas, com alta taxa de detecção para redução drástica de perdas em loja.', icon: <Radio size={32} />, link: '/servicos/antenas-antifurto' },
+              { title: 'Controle de Acesso', desc: 'Gestão de fluxo corporativo com catracas, biometria e softwares centralizados para múltiplas filiais.', icon: <Lock size={32} />, link: '/servicos/controle-de-acesso' },
+              { title: 'Manutenção Preventiva', desc: 'Rotinas rigorosas de inspeção para garantir 100% de disponibilidade dos seus equipamentos de segurança.', icon: <Wrench size={32} />, link: '/servicos/manutencao-preventiva' },
+              { title: 'Inteligência de Varejo', desc: 'Integração de dados de fluxo e mapas de calor para otimização de layout de loja e inteligência de negócios.', icon: <Map size={32} />, link: '/servicos/seguranca-para-redes-varejistas' },
+              { title: 'NOC & Suporte 24/7', desc: 'Monitoramento contínuo de health check da infraestrutura, garantindo resposta imediata a qualquer falha técnica.', icon: <Clock size={32} />, link: '/servicos/suporte-emergencial' }
             ].map((service, index) => (
-              <div key={index} className="glass-panel" style={{ padding: '2rem', transition: 'all 0.3s ease', cursor: 'pointer' }} onMouseEnter={(e) => e.currentTarget.style.transform = 'translateY(-5px)'} onMouseLeave={(e) => e.currentTarget.style.transform = 'translateY(0)'}>
-                <div style={{ width: '60px', height: '60px', borderRadius: '12px', background: 'rgba(0,229,255,0.1)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--c-neon-blue)', marginBottom: '1.5rem' }}>
+              <div key={index} className="premium-card">
+                <div style={{ width: '64px', height: '64px', borderRadius: '16px', background: 'rgba(0, 86, 210, 0.08)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--c-blue-primary)', marginBottom: '1.5rem' }}>
                   {service.icon}
                 </div>
-                <h3 style={{ fontSize: '1.25rem', marginBottom: '1rem' }}>{service.title}</h3>
-                <p style={{ color: 'var(--c-metallic-light)', fontSize: '0.9rem', marginBottom: '1.5rem' }}>{service.desc}</p>
-                <Link href="/servicos" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', color: 'var(--c-white)', fontSize: '0.875rem', fontWeight: 600 }}>
-                  Saiba mais <ArrowRight size={16} color="var(--c-neon-blue)" />
+                <h3 style={{ fontSize: '1.5rem', marginBottom: '1rem', color: 'var(--c-dark-blue)' }}>{service.title}</h3>
+                <p style={{ color: 'var(--c-metallic)', fontSize: '1rem', marginBottom: '2rem', lineHeight: '1.6' }}>{service.desc}</p>
+                <Link href={service.link} style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', color: 'var(--c-blue-primary)', fontSize: '0.875rem', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.5px' }}>
+                  Conheça a solução <ArrowRight size={16} />
                 </Link>
               </div>
             ))}
@@ -99,54 +122,111 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Differentials Section */}
-      <section className="section-padding" style={{ backgroundColor: 'var(--c-black)', position: 'relative' }}>
-        <div className="container" style={{ display: 'flex', alignItems: 'center', gap: '4rem' }}>
-          <div style={{ flex: 1 }}>
-            <h2 style={{ fontSize: '2.5rem', marginBottom: '1.5rem' }}>Por que a grandes redes confiam na <span className="text-neon">C5S Security?</span></h2>
-            <p style={{ color: 'var(--c-metallic-light)', marginBottom: '2rem', fontSize: '1.125rem' }}>Nossa estrutura foi desenhada para atender a complexidade de grandes operações varejistas, garantindo padronização e eficiência.</p>
-            
-            <ul style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
-              {[
-                'Padronização de projetos em todas as filiais do país',
-                'SLA de atendimento rigoroso e transparente',
-                'Equipe técnica própria altamente qualificada',
-                'Tecnologias homologadas com os melhores fabricantes',
-                'Dashboard exclusivo para gestão de chamados'
-              ].map((item, i) => (
-                <li key={i} style={{ display: 'flex', alignItems: 'flex-start', gap: '1rem' }}>
-                  <CheckCircle2 size={24} color="var(--c-neon-blue)" style={{ flexShrink: 0 }} />
-                  <span style={{ fontSize: '1rem', color: 'var(--c-white)' }}>{item}</span>
-                </li>
-              ))}
-            </ul>
+      {/* Cases Section */}
+      <section className="section-padding" style={{ backgroundColor: 'var(--c-bg-light)', borderTop: '1px solid var(--c-border-light)' }}>
+        <div className="container">
+          <div style={{ textAlign: 'center', marginBottom: '4rem', maxWidth: '800px', margin: '0 auto 4rem auto' }}>
+            <div style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', marginBottom: '1rem' }}>
+              <span style={{ width: '30px', height: '2px', background: 'var(--c-blue-primary)' }}></span>
+              <span style={{ color: 'var(--c-blue-primary)', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '1px', fontSize: '0.875rem' }}>Casos de Sucesso</span>
+              <span style={{ width: '30px', height: '2px', background: 'var(--c-blue-primary)' }}></span>
+            </div>
+            <h2 style={{ fontSize: '3rem', marginBottom: '1.25rem' }}>Tecnologia aplicada na prática.</h2>
+            <p style={{ color: 'var(--c-metallic)', fontSize: '1.125rem' }}>Veja como implementamos soluções de segurança nas maiores redes do país, desde o caixa até as portas da loja.</p>
           </div>
-          <div style={{ flex: 1, position: 'relative' }}>
-             {/* Using a placeholder styled to look like an interface or tech setup */}
-             <div style={{ width: '100%', aspectRatio: '4/3', background: 'var(--c-black-lighter)', borderRadius: '12px', border: '1px solid var(--c-metallic-dark)', overflow: 'hidden', position: 'relative' }}>
-               <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', background: 'linear-gradient(135deg, rgba(0,229,255,0.1) 0%, rgba(10,37,64,0.5) 100%)' }}></div>
-               <div style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', textAlign: 'center' }}>
-                 <Cpu size={64} color="var(--c-neon-blue)" style={{ opacity: 0.8, marginBottom: '1rem' }} />
-                 <p style={{ color: 'var(--c-metallic-light)', fontFamily: 'var(--font-heading)', letterSpacing: '2px', textTransform: 'uppercase', fontSize: '0.875rem' }}>Tecnologia Enterprise</p>
-               </div>
-             </div>
-             {/* Glow behind image */}
-             <div style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', width: '80%', height: '80%', background: 'var(--c-neon-blue)', filter: 'blur(100px)', opacity: 0.1, zIndex: -1 }}></div>
+
+          <div className="grid grid-cols-3">
+            <div className="premium-card" style={{ padding: 0, overflow: 'hidden' }}>
+              <img src="/images/case_marisa_rf_generated_1777419740237.png" alt="Implementação Antenas Marisa" style={{ width: '100%', height: '250px', objectFit: 'cover' }} />
+              <div style={{ padding: '2rem' }}>
+                <h3 style={{ fontSize: '1.25rem', marginBottom: '0.5rem', color: 'var(--c-dark-blue)' }}>Antenas RF e Prevenção</h3>
+                <p style={{ color: 'var(--c-metallic)', fontSize: '0.9rem' }}>Implementação de antenas antifurto elegantes na entrada, sem impactar a arquitetura visual da loja.</p>
+              </div>
+            </div>
+
+            <div className="premium-card" style={{ padding: 0, overflow: 'hidden' }}>
+              <img src="/images/case_desativador_rf_1777419614796.png" alt="Desativador RF no Caixa" style={{ width: '100%', height: '250px', objectFit: 'cover' }} />
+              <div style={{ padding: '2rem' }}>
+                <h3 style={{ fontSize: '1.25rem', marginBottom: '0.5rem', color: 'var(--c-dark-blue)' }}>Desativação no PDV</h3>
+                <p style={{ color: 'var(--c-metallic)', fontSize: '0.9rem' }}>Desativador de etiquetas embutido nos caixas para uma experiência de checkout rápida e invisível.</p>
+              </div>
+            </div>
+
+            <div className="premium-card" style={{ padding: 0, overflow: 'hidden' }}>
+              <img src="/images/case_noc_monitoring_1777419631868.png" alt="Monitoramento Centralizado" style={{ width: '100%', height: '250px', objectFit: 'cover' }} />
+              <div style={{ padding: '2rem' }}>
+                <h3 style={{ fontSize: '1.25rem', marginBottom: '0.5rem', color: 'var(--c-dark-blue)' }}>Central de Monitoramento</h3>
+                <p style={{ color: 'var(--c-metallic)', fontSize: '0.9rem' }}>Operação NOC 24/7 centralizando dados de centenas de filiais em tempo real.</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="section-padding" style={{ background: 'linear-gradient(to right, var(--c-blue-accent), var(--c-black))', borderTop: '1px solid var(--c-metallic-dark)', borderBottom: '1px solid var(--c-metallic-dark)' }}>
-        <div className="container text-center">
-          <h2 style={{ fontSize: '3rem', marginBottom: '1.5rem' }}>Pronto para elevar o nível da sua <span className="text-neon">segurança?</span></h2>
-          <p style={{ color: 'var(--c-metallic-light)', fontSize: '1.25rem', marginBottom: '3rem', maxWidth: '800px', margin: '0 auto 3rem auto' }}>
-            Fale com nossos especialistas e descubra como podemos criar um projeto personalizado para a sua rede varejista.
-          </p>
-          <div style={{ display: 'flex', justifyContent: 'center', gap: '1.5rem' }}>
-            <Link href="/orcamento" className="btn btn-primary" style={{ padding: '1rem 2.5rem', fontSize: '1.125rem' }}>
-              Agendar Consultoria Gratuita
-            </Link>
+      {/* Differentials Section - High Trust Layout */}
+      <section className="section-padding" style={{ backgroundColor: 'var(--c-white)', borderTop: '1px solid var(--c-border-light)' }}>
+        <div className="container" style={{ display: 'flex', alignItems: 'center', gap: '5rem' }}>
+          <div style={{ flex: 1, position: 'relative' }}>
+             {/* Corporate Abstract Element representing technology */}
+             <div style={{ width: '100%', aspectRatio: '4/3', background: 'var(--c-bg-light)', borderRadius: '24px', border: '1px solid var(--c-border-light)', overflow: 'hidden', position: 'relative', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 20px 40px rgba(0,0,0,0.05)' }}>
+               <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', background: 'linear-gradient(135deg, rgba(0,86,210,0.05) 0%, rgba(0,229,255,0.05) 100%)' }}></div>
+               <div style={{ textAlign: 'center', zIndex: 1 }}>
+                 <Cpu size={80} color="var(--c-blue-primary)" style={{ marginBottom: '1.5rem', opacity: 0.9 }} />
+                 <p style={{ color: 'var(--c-dark-blue)', fontFamily: 'var(--font-heading)', fontWeight: 700, letterSpacing: '2px', textTransform: 'uppercase', fontSize: '1rem' }}>Operação Centralizada</p>
+               </div>
+             </div>
+          </div>
+
+          <div style={{ flex: 1 }}>
+            <div style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', marginBottom: '1rem' }}>
+              <span style={{ width: '30px', height: '2px', background: 'var(--c-blue-primary)' }}></span>
+              <span style={{ color: 'var(--c-blue-primary)', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '1px', fontSize: '0.875rem' }}>Por que a C5S?</span>
+            </div>
+            <h2 style={{ fontSize: '3rem', marginBottom: '1.5rem', lineHeight: '1.1' }}>Sua expansão suportada por uma infraestrutura <span className="text-primary">sólida.</span></h2>
+            <p style={{ color: 'var(--c-metallic)', marginBottom: '2.5rem', fontSize: '1.125rem', lineHeight: '1.8' }}>
+              A complexidade de gerenciar centenas de lojas exige um parceiro capaz de entregar padronização nacional e cumprimento rigoroso de SLAs.
+            </p>
+            
+            <ul style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem' }}>
+              {[
+                'Projetos 100% padronizados em todas as unidades',
+                'Contratos corporativos de SLA com atendimento garantido',
+                'Engenheiros especialistas nas principais marcas mundiais',
+                'Estoque estratégico para rápida reposição (RMA)',
+                'Plataforma própria de chamados e relatórios gerenciais'
+              ].map((item, i) => (
+                <li key={i} style={{ display: 'flex', alignItems: 'flex-start', gap: '1rem' }}>
+                  <div style={{ width: '24px', height: '24px', borderRadius: '50%', background: 'var(--c-blue-primary)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0, marginTop: '2px' }}>
+                    <CheckCircle2 size={14} color="white" />
+                  </div>
+                  <span style={{ fontSize: '1.05rem', color: 'var(--c-dark-blue)', fontWeight: 500 }}>{item}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section - Sophisticated */}
+      <section className="section-padding" style={{ background: 'var(--c-bg-light)', borderTop: '1px solid var(--c-border-light)' }}>
+        <div className="container">
+          <div style={{ background: 'linear-gradient(135deg, var(--c-dark-blue) 0%, var(--c-blue-accent) 100%)', borderRadius: '24px', padding: '5rem 3rem', textAlign: 'center', position: 'relative', overflow: 'hidden', boxShadow: '0 25px 50px -12px rgba(0,0,0,0.25)' }}>
+            <div style={{ position: 'absolute', top: 0, right: 0, width: '100%', height: '100%', background: 'radial-gradient(circle at right, rgba(0, 86, 210, 0.5) 0%, transparent 60%)', zIndex: 0 }}></div>
+            
+            <div style={{ position: 'relative', zIndex: 1, maxWidth: '800px', margin: '0 auto' }}>
+              <h2 style={{ fontSize: '3rem', marginBottom: '1.5rem', color: 'var(--c-white)' }}>Otimize sua segurança e reduza custos operacionais.</h2>
+              <p style={{ color: 'rgba(255,255,255,0.8)', fontSize: '1.25rem', marginBottom: '3rem' }}>
+                Agende uma reunião técnica com nossos engenheiros e descubra como grandes varejistas estão escalando suas operações com a C5S.
+              </p>
+              <div style={{ display: 'flex', justifyContent: 'center', gap: '1.5rem' }}>
+                <Link href="/orcamento" className="btn btn-primary" style={{ padding: '1rem 2.5rem', fontSize: '1.125rem' }}>
+                  Solicitar Proposta Comercial
+                </Link>
+                <Link href="/contato" className="btn btn-secondary" style={{ padding: '1rem 2.5rem', fontSize: '1.125rem', color: 'var(--c-white)', borderColor: 'rgba(255,255,255,0.3)' }}>
+                  Falar com Consultor
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
       </section>
