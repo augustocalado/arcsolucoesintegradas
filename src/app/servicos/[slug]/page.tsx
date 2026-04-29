@@ -239,8 +239,8 @@ export default async function ServiceSlugPage({ params }: { params: Promise<{ sl
       />
       
       {/* Service Hero Banner */}
-      <section style={{ 
-        padding: '10rem 0 6rem 0', 
+      <section className="section-padding" style={{ 
+        paddingTop: '9rem',
         background: pageData.heroImage ? `url(${pageData.heroImage}) no-repeat fixed` : 'linear-gradient(135deg, var(--c-dark-blue) 0%, var(--c-blue-accent) 100%)',
         backgroundPosition: pageData.heroPosition || 'center',
         backgroundSize: pageData.heroSize || 'cover',
@@ -253,7 +253,7 @@ export default async function ServiceSlugPage({ params }: { params: Promise<{ sl
             <div style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', padding: '0.4rem 1rem', borderRadius: '30px', background: 'rgba(255,255,255,0.1)', border: '1px solid rgba(255,255,255,0.2)', marginBottom: '1.5rem', color: 'var(--c-white)', fontSize: '0.875rem', fontWeight: 600 }}>
               <ShieldCheck size={16} color="var(--c-neon-blue)" /> Serviço Especializado
             </div>
-            <h1 style={{ fontSize: '3.5rem', marginBottom: '1.5rem', color: 'var(--c-white)' }}>{pageData.h1}</h1>
+            <h1 style={{ marginBottom: '1.5rem', color: 'var(--c-white)' }}>{pageData.h1}</h1>
             <p style={{ fontSize: '1.25rem', color: 'rgba(255,255,255,0.8)', marginBottom: '2.5rem', lineHeight: 1.8 }}>{pageData.subtitle}</p>
             
             <Link href="/orcamento" className="btn btn-primary" style={{ padding: '1rem 2rem' }}>
@@ -265,7 +265,7 @@ export default async function ServiceSlugPage({ params }: { params: Promise<{ sl
 
       <section className="section-padding" style={{ background: 'var(--c-white)' }}>
         <div className="container">
-          <div className="grid grid-cols-2" style={{ gap: '5rem', alignItems: 'flex-start' }}>
+          <div className="grid grid-cols-2" style={{ alignItems: 'flex-start' }}>
             <div>
               <div style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', marginBottom: '1rem' }}>
                 <span style={{ width: '30px', height: '2px', background: 'var(--c-blue-primary)' }}></span>

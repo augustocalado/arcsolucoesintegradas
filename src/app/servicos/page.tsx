@@ -72,7 +72,7 @@ export default function Servicos() {
         
         <div className="container" style={{ position: 'relative', zIndex: 1 }}>
           <div style={{ maxWidth: '800px', margin: '0 auto', textAlign: 'center' }}>
-            <h1 style={{ fontSize: '3.5rem', marginBottom: '1.5rem', color: 'var(--c-white)' }}>Ecossistema Completo de <span style={{ color: 'var(--c-neon-blue)' }}>Segurança</span></h1>
+            <h1 style={{ marginBottom: '1.5rem', color: 'var(--c-white)' }}>Ecossistema Completo de <span style={{ color: 'var(--c-neon-blue)' }}>Segurança</span></h1>
             <p style={{ fontSize: '1.25rem', color: 'rgba(255, 255, 255, 0.8)' }}>Tecnologias de alta performance integradas para proteger de ponta a ponta as operações da sua empresa.</p>
           </div>
         </div>
@@ -82,23 +82,23 @@ export default function Servicos() {
         <div className="container">
           <div style={{ display: 'flex', flexDirection: 'column', gap: '4rem' }}>
             {servicos.map((servico, index) => (
-              <div key={servico.id} className="premium-card" style={{ display: 'flex', flexDirection: index % 2 === 0 ? 'row' : 'row-reverse', alignItems: 'center', gap: '4rem', padding: '3rem', border: '1px solid var(--c-border-light)', boxShadow: '0 10px 30px rgba(0,0,0,0.03)' }}>
-                <div style={{ flex: 1 }}>
+              <div key={servico.id} className={`premium-card service-card-row ${index % 2 !== 0 ? 'alternate' : ''}`} style={{ alignItems: 'center', border: '1px solid var(--c-border-light)', boxShadow: '0 10px 30px rgba(0,0,0,0.03)' }}>
+                <div style={{ flex: 1, width: '100%' }}>
                   <div style={{ display: 'inline-flex', alignItems: 'center', gap: '1rem', marginBottom: '1.5rem' }}>
-                    <div style={{ width: '60px', height: '60px', borderRadius: '16px', background: 'rgba(0, 86, 210, 0.08)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--c-blue-primary)' }}>
+                    <div style={{ width: '60px', height: '60px', borderRadius: '16px', background: 'rgba(0, 86, 210, 0.08)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--c-blue-primary)', flexShrink: 0 }}>
                       {servico.icon}
                     </div>
-                    <h2 style={{ fontSize: '2rem', color: 'var(--c-dark-blue)' }}>{servico.title}</h2>
+                    <h2 style={{ fontSize: '1.75rem', color: 'var(--c-dark-blue)' }}>{servico.title}</h2>
                   </div>
                   
                   <p style={{ color: 'var(--c-metallic)', fontSize: '1.125rem', marginBottom: '2rem', lineHeight: 1.8 }}>{servico.desc}</p>
                   
-                  <Link href={`/servicos/${servico.id}`} className="btn btn-primary" style={{ padding: '0.875rem 2rem', fontSize: '1rem' }}>
+                  <Link href={`/servicos/${servico.id}`} className="btn btn-primary" style={{ padding: '0.875rem 2rem', fontSize: '1rem', width: '100%', justifyContent: 'center' }}>
                     Conhecer Detalhes <ArrowRight size={18} />
                   </Link>
                 </div>
                 
-                <div style={{ flex: 1, position: 'relative', height: '350px', borderRadius: '16px', overflow: 'hidden', boxShadow: '0 20px 40px rgba(0,0,0,0.1)' }}>
+                <div style={{ flex: 1, position: 'relative', width: '100%', height: '300px', borderRadius: '16px', overflow: 'hidden', boxShadow: '0 20px 40px rgba(0,0,0,0.1)' }}>
                   <Image 
                     src={servico.image} 
                     alt={servico.title} 

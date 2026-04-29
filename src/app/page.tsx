@@ -28,7 +28,7 @@ export default function Home() {
               <span style={{ fontSize: '0.875rem', fontWeight: 600, color: 'var(--c-white)', letterSpacing: '0.5px' }}>Padrão Enterprise em Segurança Eletrônica</span>
             </div>
             
-            <h1 style={{ fontSize: '4.5rem', marginBottom: '1.5rem', color: 'var(--c-white)', lineHeight: '1.1' }}>
+            <h1 style={{ marginBottom: '1.5rem', color: 'var(--c-white)', lineHeight: '1.1' }}>
               Proteção inteligente para <span style={{ color: 'var(--c-neon-blue)' }}>Redes Varejistas</span>
             </h1>
             
@@ -51,7 +51,7 @@ export default function Home() {
         {/* Floating Numbers Section */}
         <div style={{ position: 'absolute', bottom: '0', left: '0', width: '100%', background: 'rgba(5, 5, 5, 0.4)', borderTop: '1px solid rgba(255,255,255,0.1)', backdropFilter: 'blur(10px)' }}>
           <div className="container">
-            <div style={{ display: 'flex', justifyContent: 'space-between', padding: '2rem 0' }}>
+            <div className="stats-grid">
               <div>
                 <h3 style={{ fontSize: '2rem', color: 'var(--c-white)', marginBottom: '0.25rem' }}>+15 <span style={{ fontSize: '1rem', color: 'var(--c-neon-blue)', fontWeight: 600 }}>anos</span></h3>
                 <p style={{ color: 'rgba(255,255,255,0.6)', fontSize: '0.875rem', fontWeight: 500, textTransform: 'uppercase', letterSpacing: '1px' }}>De Experiência</p>
@@ -165,10 +165,10 @@ export default function Home() {
 
       {/* Differentials Section - High Trust Layout */}
       <section className="section-padding" style={{ backgroundColor: 'var(--c-white)', borderTop: '1px solid var(--c-border-light)' }}>
-        <div className="container" style={{ display: 'flex', alignItems: 'center', gap: '5rem' }}>
-          <div style={{ flex: 1, position: 'relative' }}>
+        <div className="container flex-responsive" style={{ alignItems: 'center', gap: '4rem' }}>
+          <div style={{ flex: 1, position: 'relative', width: '100%' }}>
              {/* Corporate Abstract Element representing technology */}
-             <div style={{ width: '100%', aspectRatio: '4/3', background: 'var(--c-bg-light)', borderRadius: '24px', border: '1px solid var(--c-border-light)', overflow: 'hidden', position: 'relative', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 20px 40px rgba(0,0,0,0.05)' }}>
+             <div style={{ width: '100%', aspectRatio: '16/9', background: 'var(--c-bg-light)', borderRadius: '24px', border: '1px solid var(--c-border-light)', overflow: 'hidden', position: 'relative', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 20px 40px rgba(0,0,0,0.05)' }}>
                <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', background: 'linear-gradient(135deg, rgba(0,86,210,0.05) 0%, rgba(0,229,255,0.05) 100%)' }}></div>
                <div style={{ textAlign: 'center', zIndex: 1 }}>
                  <Cpu size={80} color="var(--c-blue-primary)" style={{ marginBottom: '1.5rem', opacity: 0.9 }} />
@@ -182,7 +182,7 @@ export default function Home() {
               <span style={{ width: '30px', height: '2px', background: 'var(--c-blue-primary)' }}></span>
               <span style={{ color: 'var(--c-blue-primary)', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '1px', fontSize: '0.875rem' }}>Por que a C5S?</span>
             </div>
-            <h2 style={{ fontSize: '3rem', marginBottom: '1.5rem', lineHeight: '1.1' }}>Sua expansão suportada por uma infraestrutura <span className="text-primary">sólida.</span></h2>
+            <h2 style={{ marginBottom: '1.5rem', lineHeight: '1.1' }}>Sua expansão suportada por uma infraestrutura <span className="text-primary">sólida.</span></h2>
             <p style={{ color: 'var(--c-metallic)', marginBottom: '2.5rem', fontSize: '1.125rem', lineHeight: '1.8' }}>
               A complexidade de gerenciar centenas de lojas exige um parceiro capaz de entregar padronização nacional e cumprimento rigoroso de SLAs.
             </p>
@@ -218,7 +218,7 @@ export default function Home() {
               <p style={{ color: 'rgba(255,255,255,0.8)', fontSize: '1.25rem', marginBottom: '3rem' }}>
                 Agende uma reunião técnica com nossos engenheiros e descubra como grandes varejistas estão escalando suas operações com a C5S.
               </p>
-              <div style={{ display: 'flex', justifyContent: 'center', gap: '1.5rem' }}>
+              <div className="flex-responsive" style={{ justifyContent: 'center', gap: '1.5rem' }}>
                 <Link href="/orcamento" className="btn btn-primary" style={{ padding: '1rem 2.5rem', fontSize: '1.125rem' }}>
                   Solicitar Proposta Comercial
                 </Link>
