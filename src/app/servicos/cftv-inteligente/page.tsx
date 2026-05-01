@@ -4,9 +4,9 @@ import Link from 'next/link';
 import { ArrowRight, Video, ScanFace, Activity, ShieldAlert, Cpu } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'CFTV Inteligente com IA Corporativa | C5S Security',
+  title: 'CFTV Inteligente com IA Corporativa | ARC TECH',
   description: 'Soluções avançadas de videomonitoramento com Inteligência Artificial, reconhecimento facial e análise comportamental para grandes corporações e varejo.',
-  keywords: 'cftv inteligente, câmeras com ia, reconhecimento facial corporativo, videomonitoramento inteligente, c5s security',
+  keywords: 'cftv inteligente, câmeras com ia, reconhecimento facial corporativo, videomonitoramento inteligente, ARC TECH',
 };
 
 export default function CFTVInteligentePage() {

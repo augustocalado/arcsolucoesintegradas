@@ -3,8 +3,8 @@ import { Shield, Target, Eye, Users } from 'lucide-react';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Sobre a Empresa | C5S Security',
-  description: 'Conheça a história, missão e valores da C5S Security. Empresa líder em segurança eletrônica corporativa com cobertura nacional.',
+  title: 'Sobre a Empresa | ARC TECH',
+  description: 'Conheça a história, missão e valores da ARC TECH. Empresa líder em segurança eletrônica corporativa com cobertura nacional.',
 };
 
 export default function SobreEmpresa() {
@@ -29,7 +29,7 @@ export default function SobreEmpresa() {
               </div>
               <h2 style={{ fontSize: '2.5rem', marginBottom: '1.5rem' }}>O parceiro estratégico da sua operação.</h2>
               <p style={{ color: 'var(--c-metallic)', marginBottom: '1.5rem', lineHeight: 1.8, fontSize: '1.125rem' }}>
-                Fundada com a missão de revolucionar a segurança eletrônica no Brasil, a C5S Security nasceu para atender uma demanda crítica: a necessidade de um serviço padronizado, de alta qualidade e com abrangência nacional para o setor varejista.
+                Fundada com a missão de revolucionar a segurança eletrônica no Brasil, a ARC TECH nasceu para atender uma demanda crítica: a necessidade de um serviço padronizado, de alta qualidade e com abrangência nacional para o setor varejista.
               </p>
               <p style={{ color: 'var(--c-metallic)', marginBottom: '1.5rem', lineHeight: 1.8, fontSize: '1.125rem' }}>
                 Ao longo de nossa trajetória, investimos fortemente em capital humano e tecnologias disruptivas, estabelecendo parcerias sólidas com os maiores fabricantes de hardware e software de segurança do mundo.

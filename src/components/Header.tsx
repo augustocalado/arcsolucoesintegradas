@@ -13,7 +13,7 @@ export default function Header() {
         <Link href="/" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', position: 'relative', zIndex: 1001 }}>
           <Shield color="var(--c-blue-primary)" size={32} />
           <span style={{ fontSize: '1.75rem', fontWeight: 800, fontFamily: 'var(--font-heading)', color: 'var(--c-dark-blue)' }}>
-            C5S<span style={{ color: 'var(--c-blue-primary)' }}>.</span>
+            ARC TECH<span style={{ color: 'var(--c-blue-primary)' }}>.</span>
           </span>
         </Link>
         

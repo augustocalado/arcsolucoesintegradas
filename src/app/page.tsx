@@ -180,7 +180,7 @@ export default function Home() {
           <div style={{ flex: 1 }}>
             <div style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', marginBottom: '1rem' }}>
               <span style={{ width: '30px', height: '2px', background: 'var(--c-blue-primary)' }}></span>
-              <span style={{ color: 'var(--c-blue-primary)', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '1px', fontSize: '0.875rem' }}>Por que a C5S?</span>
+              <span style={{ color: 'var(--c-blue-primary)', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '1px', fontSize: '0.875rem' }}>Por que a ARC TECH?</span>
             </div>
             <h2 style={{ marginBottom: '1.5rem', lineHeight: '1.1' }}>Sua expansão suportada por uma infraestrutura <span className="text-primary">sólida.</span></h2>
             <p style={{ color: 'var(--c-metallic)', marginBottom: '2.5rem', fontSize: '1.125rem', lineHeight: '1.8' }}>
@@ -216,7 +216,7 @@ export default function Home() {
             <div style={{ position: 'relative', zIndex: 1, maxWidth: '800px', margin: '0 auto' }}>
               <h2 style={{ fontSize: '3rem', marginBottom: '1.5rem', color: 'var(--c-white)' }}>Otimize sua segurança e reduza custos operacionais.</h2>
               <p style={{ color: 'rgba(255,255,255,0.8)', fontSize: '1.25rem', marginBottom: '3rem' }}>
-                Agende uma reunião técnica com nossos engenheiros e descubra como grandes varejistas estão escalando suas operações com a C5S.
+                Agende uma reunião técnica com nossos engenheiros e descubra como grandes varejistas estão escalando suas operações com a ARC TECH.
               </p>
               <div className="flex-responsive" style={{ justifyContent: 'center', gap: '1.5rem' }}>
                 <Link href="/orcamento" className="btn btn-primary" style={{ padding: '1rem 2.5rem', fontSize: '1.125rem' }}>

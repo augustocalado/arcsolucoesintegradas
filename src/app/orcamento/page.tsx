@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 import { Send, MapPin, Phone, Mail } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Solicitar Orçamento | C5S Security',
+  title: 'Solicitar Orçamento | ARC TECH',
   description: 'Fale com nossos especialistas comerciais e receba uma proposta personalizada para a segurança da sua empresa.',
 };
 
@@ -99,7 +99,7 @@ export default function Orcamento() {
                   </div>
                   <div>
                     <h4 style={{ fontSize: '1.125rem', marginBottom: '0.25rem', color: 'var(--c-dark-blue)' }}>E-mail Comercial</h4>
-                    <p style={{ color: 'var(--c-metallic)', fontSize: '1.125rem', fontWeight: 600 }}>comercial@c5s.com.br</p>
+                    <p style={{ color: 'var(--c-metallic)', fontSize: '1.125rem', fontWeight: 600 }}>comercial@ARC TECH.com.br</p>
                     <p style={{ color: 'var(--c-metallic-light)', fontSize: '0.875rem' }}>Retorno estimado: 4 horas</p>
                   </div>
                 </div>

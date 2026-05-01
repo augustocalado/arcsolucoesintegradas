@@ -21,7 +21,7 @@ const seoPages: Record<string, {
   features: string[]
 }> = {
   'instalacao-de-cftv-corporativo': {
-    title: 'Instalação de CFTV Corporativo | C5S Security',
+    title: 'Instalação de CFTV Corporativo | ARC TECH',
     desc: 'Projetos e instalação de CFTV para empresas e varejo. Câmeras IP, análise inteligente de vídeo e alta resolução. Empresa especializada com cobertura nacional.',
     h1: 'Instalação de CFTV Corporativo',
     subtitle: 'Tecnologia de ponta em videomonitoramento para proteger os ativos da sua empresa contra perdas e intrusões.',
@@ -38,7 +38,7 @@ const seoPages: Record<string, {
     ]
   },
   'manutencao-de-cftv': {
-    title: 'Manutenção de CFTV Corporativo | C5S Security',
+    title: 'Manutenção de CFTV Corporativo | ARC TECH',
     desc: 'Manutenção preventiva e corretiva de CFTV para empresas. Garanta o uptime do seu sistema de segurança com nossos SLAs rigorosos e atendimento nacional.',
     h1: 'Manutenção Especializada de CFTV',
     subtitle: 'Não deixe seu sistema parar. Nossos técnicos garantem o funcionamento ininterrupto do seu videomonitoramento.',
@@ -55,7 +55,7 @@ const seoPages: Record<string, {
     ]
   },
   'antenas-antifurto': {
-    title: 'Antenas Antifurto EAS para Varejo | C5S Security',
+    title: 'Antenas Antifurto EAS para Varejo | ARC TECH',
     desc: 'Sistemas EAS, Antenas Antifurto AM e RF para lojas e supermercados. Reduza furtos em até 80% com tecnologia de ponta.',
     h1: 'Antenas Antifurto para Prevenção de Perdas',
     subtitle: 'Soluções discretas e eficientes para proteger suas mercadorias sem prejudicar a experiência do cliente.',
@@ -63,7 +63,7 @@ const seoPages: Record<string, {
     schema: 'Service',
     heroImage: '/images/banner_farmacia_antenas.jpg',
     aboutTitle: 'Prevenção de Perdas com Alta Tecnologia',
-    aboutText: 'As antenas antifurto C5S são projetadas para o varejo moderno. Com tecnologias AM (Acousto-Magnetic) e RF (Radio Frequency), oferecemos a maior taxa de detecção do mercado com design que se integra à arquitetura da sua loja.',
+    aboutText: 'As antenas antifurto ARC TECH são projetadas para o varejo moderno. Com tecnologias AM (Acousto-Magnetic) e RF (Radio Frequency), oferecemos a maior taxa de detecção do mercado com design que se integra à arquitetura da sua loja.',
     features: [
       'Detecção de alta precisão com zero alarmes falsos',
       'Design em acrílico premium com iluminação LED configurável',
@@ -73,7 +73,7 @@ const seoPages: Record<string, {
     ]
   },
   'controle-de-acesso': {
-    title: 'Sistemas de Controle de Acesso Corporativo | C5S Security',
+    title: 'Sistemas de Controle de Acesso Corporativo | ARC TECH',
     desc: 'Instalação de biometria, catracas e controle de acesso facial para empresas. Gerencie o fluxo de pessoas com máxima segurança.',
     h1: 'Controle de Acesso Enterprise',
     subtitle: 'Gestão inteligente de entradas e saídas. Proteja áreas restritas com tecnologia biométrica e facial de alta precisão.',
@@ -93,7 +93,7 @@ const seoPages: Record<string, {
     ]
   },
   'alarmes-empresariais': {
-    title: 'Sistemas de Alarmes Empresariais | C5S Security',
+    title: 'Sistemas de Alarmes Empresariais | ARC TECH',
     desc: 'Alarmes de intrusão, sensores avançados e monitoramento 24h para proteger o patrimônio da sua empresa. Projetos corporativos sob medida.',
     h1: 'Sistemas de Alarmes Corporativos',
     subtitle: 'Detecção rápida e resposta imediata. Mantenha sua empresa protegida fora do horário comercial.',
@@ -110,7 +110,7 @@ const seoPages: Record<string, {
     ]
   },
   'manutencao-preventiva': {
-    title: 'Manutenção Preventiva de Segurança Eletrônica | C5S Security',
+    title: 'Manutenção Preventiva de Segurança Eletrônica | ARC TECH',
     desc: 'Evite falhas no seu sistema de segurança. Contratos de manutenção preventiva para CFTV, alarmes e controle de acesso em todo o Brasil.',
     h1: 'Manutenção Preventiva de Segurança Eletrônica',
     subtitle: 'Previsibilidade e confiabilidade. Cuidamos do seu sistema antes que o problema aconteça.',
@@ -127,7 +127,7 @@ const seoPages: Record<string, {
     ]
   },
   'suporte-emergencial': {
-    title: 'Suporte Emergencial em Segurança Eletrônica | C5S Security',
+    title: 'Suporte Emergencial em Segurança Eletrônica | ARC TECH',
     desc: 'Atendimento rápido e suporte técnico de emergência para sistemas de segurança corporativa. SLAs agressivos e técnicos especializados.',
     h1: 'Suporte Emergencial 24/7',
     subtitle: 'Problemas críticos exigem respostas rápidas. Nossa equipe atua com agilidade para restaurar a segurança da sua operação.',
@@ -144,7 +144,7 @@ const seoPages: Record<string, {
     ]
   },
   'seguranca-para-lojas': {
-    title: 'Segurança Eletrônica para Lojas de Varejo | C5S Security',
+    title: 'Segurança Eletrônica para Lojas de Varejo | ARC TECH',
     desc: 'Projetos completos de segurança para lojas. CFTV inteligente, antenas antifurto e monitoramento focados em prevenção de perdas.',
     h1: 'Segurança Inteligente para Lojas',
     subtitle: 'Tecnologia focada em reduzir perdas e aumentar a lucratividade da sua loja.',
@@ -161,7 +161,7 @@ const seoPages: Record<string, {
     ]
   },
   'seguranca-para-shopping': {
-    title: 'Segurança Eletrônica para Shoppings | C5S Security',
+    title: 'Segurança Eletrônica para Shoppings | ARC TECH',
     desc: 'Soluções robustas de controle de acesso, CFTV com IA e monitoramento de grandes áreas para shopping centers e centros comerciais.',
     h1: 'Segurança para Shopping Centers',
     subtitle: 'Gestão de multidões, reconhecimento facial e controle de perímetro para complexos comerciais de grande porte.',
@@ -178,7 +178,7 @@ const seoPages: Record<string, {
     ]
   },
   'seguranca-para-redes-varejistas': {
-    title: 'Segurança para Redes Varejistas | C5S Security',
+    title: 'Segurança para Redes Varejistas | ARC TECH',
     desc: 'Padronização nacional de CFTV, alarmes e controle de acesso para redes de supermercados, farmácias e grandes varejistas.',
     h1: 'Segurança Padronizada para Redes Varejistas',
     subtitle: 'Gestão centralizada e SLA unificado para todas as filiais da sua rede, em qualquer estado do Brasil.',
@@ -225,8 +225,8 @@ export default async function ServiceSlugPage({ params }: { params: Promise<{ sl
     "name": pageData.h1,
     "provider": {
       "@type": "LocalBusiness",
-      "name": "C5S Security",
-      "image": "https://c5s.com.br/logo.png"
+      "name": "ARC TECH",
+      "image": "https://ARC TECH.com.br/logo.png"
     },
     "description": pageData.desc
   };
@@ -269,7 +269,7 @@ export default async function ServiceSlugPage({ params }: { params: Promise<{ sl
             <div>
               <div style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', marginBottom: '1rem' }}>
                 <span style={{ width: '30px', height: '2px', background: 'var(--c-blue-primary)' }}></span>
-                <span style={{ color: 'var(--c-blue-primary)', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '1px', fontSize: '0.875rem' }}>Diferencial C5S</span>
+                <span style={{ color: 'var(--c-blue-primary)', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '1px', fontSize: '0.875rem' }}>Diferencial ARC TECH</span>
               </div>
               <h2 style={{ fontSize: '2.5rem', marginBottom: '1.5rem', color: 'var(--c-dark-blue)' }}>{pageData.aboutTitle}</h2>
               <p style={{ color: 'var(--c-metallic)', marginBottom: '2rem', lineHeight: 1.8, fontSize: '1.125rem' }}>

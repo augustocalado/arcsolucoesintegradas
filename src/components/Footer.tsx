@@ -10,7 +10,7 @@ export default function Footer() {
           <Link href="/" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '1rem' }}>
             <Shield color="var(--c-neon-blue)" size={28} />
             <span style={{ fontSize: '1.25rem', fontWeight: 800, fontFamily: 'var(--font-heading)', color: 'var(--c-white)' }}>
-              C5S<span style={{ color: 'var(--c-neon-blue)' }}>.</span>
+              ARC TECH<span style={{ color: 'var(--c-neon-blue)' }}>.</span>
             </span>
           </Link>
           <p style={{ color: 'var(--c-metallic-light)', fontSize: '0.875rem', marginBottom: '1.5rem' }}>
@@ -59,14 +59,14 @@ export default function Footer() {
             </li>
             <li style={{ display: 'flex', gap: '0.5rem', alignItems: 'center', color: 'var(--c-metallic-light)', fontSize: '0.875rem' }}>
               <Mail size={16} style={{ color: 'var(--c-neon-blue)' }} />
-              <span>comercial@c5ssecury.com.br</span>
+              <span>comercial@ARC TECHsecury.com.br</span>
             </li>
           </ul>
         </div>
       </div>
       
       <div className="container" style={{ marginTop: '3rem', paddingTop: '1.5rem', borderTop: '1px solid var(--c-blue-accent)', textAlign: 'center', color: 'var(--c-metallic)', fontSize: '0.75rem' }}>
-        <p>&copy; {new Date().getFullYear()} C5S Security. Todos os direitos reservados.</p>
+        <p>&copy; {new Date().getFullYear()} ARC TECH. Todos os direitos reservados.</p>
       </div>
     </footer>
   );

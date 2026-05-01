@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 import { MapPin, Truck, Clock } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Cobertura Nacional | C5S Security',
+  title: 'Cobertura Nacional | ARC TECH',
   description: 'Atendimento e suporte técnico em todo o território nacional. Estrutura logística e técnica preparada para atender redes varejistas em qualquer estado do Brasil.',
 };
 
@@ -27,12 +27,12 @@ export default function CoberturaNacional() {
                 <span style={{ width: '30px', height: '2px', background: 'var(--c-blue-primary)' }}></span>
                 <span style={{ color: 'var(--c-blue-primary)', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '1px', fontSize: '0.875rem' }}>Alcance Enterprise</span>
               </div>
-              <h2 style={{ fontSize: '2.5rem', marginBottom: '1.5rem', color: 'var(--c-dark-blue)' }}>Onde você estiver, a <span className="text-primary">C5S Security</span> está.</h2>
+              <h2 style={{ fontSize: '2.5rem', marginBottom: '1.5rem', color: 'var(--c-dark-blue)' }}>Onde você estiver, a <span className="text-primary">ARC TECH</span> está.</h2>
               <p style={{ color: 'var(--c-metallic)', marginBottom: '1.5rem', lineHeight: 1.8, fontSize: '1.125rem' }}>
                 Gerenciar a segurança de dezenas ou centenas de filiais espalhadas pelo país é um desafio complexo. Contratar fornecedores locais gera inconsistência técnica, variação de preços e dificuldade na gestão de SLAs.
               </p>
               <p style={{ color: 'var(--c-metallic)', marginBottom: '2.5rem', lineHeight: 1.8, fontSize: '1.125rem' }}>
-                A C5S Security resolve esse problema atuando como seu parceiro único de tecnologia. Com bases operacionais e parceiros homologados em todas as regiões do Brasil, padronizamos a infraestrutura da sua empresa.
+                A ARC TECH resolve esse problema atuando como seu parceiro único de tecnologia. Com bases operacionais e parceiros homologados em todas as regiões do Brasil, padronizamos a infraestrutura da sua empresa.
               </p>
               
               <ul style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>

@@ -4,13 +4,13 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
-  title: 'C5S Security | Segurança Eletrônica Corporativa Premium',
-  description: 'Especialistas em CFTV Corporativo, Controle de Acesso, Antenas Antifurto e Manutenção Preventiva para Redes Varejistas em nível nacional.',
+  title: 'ARC TECH | Segurança Eletrônica Corporativa Premium',
+  description: 'Especialistas em CFTV Inteligente, Controle de Acesso e Sistemas Antifurto para Redes Varejistas. Atendimento nacional e suporte técnico especializado.',
   openGraph: {
-    title: 'C5S Security | Segurança Corporativa',
-    description: 'Implantação, manutenção e suporte técnico com cobertura nacional e atendimento especializado para empresas e varejo.',
-    url: 'https://c5s.com.br',
-    siteName: 'C5S Security',
+    title: 'ARC TECH | Segurança Corporativa',
+    description: 'Alta tecnologia em segurança para o seu negócio com cobertura em todo o Brasil.',
+    url: 'https://ARC TECH.com.br',
+    siteName: 'ARC TECH',
     locale: 'pt_BR',
     type: 'website',
   },

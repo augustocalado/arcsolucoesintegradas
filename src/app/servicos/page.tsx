@@ -5,7 +5,7 @@ import { ArrowRight, Video, Lock, Radio, Map, Wrench, ShieldAlert } from 'lucide
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Soluções em Segurança | C5S Security',
+  title: 'Soluções em Segurança | ARC TECH',
   description: 'Conheça nossas soluções enterprise: CFTV, Controle de Acesso, Antenas Antifurto e Manutenção para redes de varejo.',
 };
 
@@ -23,7 +23,7 @@ export default function Servicos() {
       title: 'Sistemas Antifurto (EAS)', 
       desc: 'Tecnologias AM, RF e RFID para proteção de mercadorias. Antenas discretas, etiquetas de alto padrão e integração com sistemas de gestão da loja para minimizar furtos internos e externos.', 
       icon: <Radio size={48} />,
-      image: '/images/antena_c5s_security_1777418676760.png'
+      image: '/images/antena_ARC TECH_security_1777418676760.png'
     },
     { 
       id: 'controle-de-acesso',
