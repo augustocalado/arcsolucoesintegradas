@@ -100,8 +100,8 @@ export default function AdminServices() {
                   </td>
                   <td style={{ padding: '1.25rem 2rem', textAlign: 'right' }}>
                     <div style={{ display: 'flex', gap: '0.5rem', justifyContent: 'flex-end' }}>
-                      <button style={{ p: '0.5rem', color: 'var(--c-metallic)', background: 'none' }}><Edit size={18} /></button>
-                      <button style={{ p: '0.5rem', color: '#ff4d4d', background: 'none' }}><Trash2 size={18} /></button>
+                      <button style={{ padding: '0.5rem', color: 'var(--c-metallic)', background: 'none' }}><Edit size={18} /></button>
+                      <button style={{ padding: '0.5rem', color: '#ff4d4d', background: 'none' }}><Trash2 size={18} /></button>
                     </div>
                   </td>
                 </tr>
