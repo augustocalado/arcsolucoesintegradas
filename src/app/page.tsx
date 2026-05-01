@@ -1,77 +1,13 @@
 import React from 'react';
 import Link from 'next/link';
 import { ArrowRight, ShieldCheck, Video, Radio, Lock, Wrench, Map, Clock, Cpu, CheckCircle2 } from 'lucide-react';
+import HeroCarousel from '@/components/HeroCarousel';
 
 export default function Home() {
   return (
     <>
-      {/* Hero Banner - Premium com Imagem */}
-      <section style={{ 
-        position: 'relative', 
-        padding: '7rem 0 10rem 0', 
-        minHeight: '100vh',
-        display: 'flex',
-        alignItems: 'center',
-        backgroundImage: 'url("/images/banner_farmacia_antenas.jpg")',
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundAttachment: 'fixed',
-        overflow: 'hidden'
-      }}>
-        {/* Dark overlay for text readability */}
-        <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', background: 'linear-gradient(to right, rgba(10, 25, 47, 0.95) 0%, rgba(10, 25, 47, 0.7) 100%)', zIndex: 0 }}></div>
-        
-        <div className="container" style={{ position: 'relative', zIndex: 1 }}>
-          <div style={{ maxWidth: '800px' }} className="animate-fade-in">
-            <div style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', padding: '0.4rem 1rem', borderRadius: '30px', background: 'rgba(255,255,255,0.1)', border: '1px solid rgba(255,255,255,0.2)', marginBottom: '2rem', backdropFilter: 'blur(10px)' }}>
-              <ShieldCheck size={18} color="var(--c-neon-blue)" />
-              <span style={{ fontSize: '0.875rem', fontWeight: 600, color: 'var(--c-white)', letterSpacing: '0.5px' }}>Padrão Enterprise em Segurança Eletrônica</span>
-            </div>
-            
-            <h1 style={{ marginBottom: '1.5rem', color: 'var(--c-white)', lineHeight: '1.1' }}>
-              Proteção inteligente para <span style={{ color: 'var(--c-neon-blue)' }}>Redes Varejistas</span>
-            </h1>
-            
-            <p style={{ fontSize: '1.25rem', color: 'rgba(255,255,255,0.8)', marginBottom: '3rem', maxWidth: '650px', lineHeight: '1.8' }}>
-              Implantação, manutenção e suporte técnico com cobertura nacional. Tecnologia de ponta para otimizar sua operação e zerar suas perdas.
-            </p>
-            
-            <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
-              <Link href="/orcamento" className="btn btn-primary" style={{ fontSize: '1.125rem', padding: '1rem 2.5rem' }}>
-                Falar com Engenharia
-                <ArrowRight size={20} />
-              </Link>
-              <Link href="https://wa.me/5511998937891" target="_blank" rel="noreferrer" className="btn btn-white" style={{ fontSize: '1.125rem', padding: '1rem 2.5rem' }}>
-                WhatsApp Corporativo
-              </Link>
-            </div>
-          </div>
-        </div>
-
-        {/* Floating Numbers Section */}
-        <div style={{ position: 'absolute', bottom: '0', left: '0', width: '100%', background: 'rgba(5, 5, 5, 0.4)', borderTop: '1px solid rgba(255,255,255,0.1)', backdropFilter: 'blur(10px)' }}>
-          <div className="container">
-            <div className="stats-grid">
-              <div>
-                <h3 style={{ fontSize: '2rem', color: 'var(--c-white)', marginBottom: '0.25rem' }}>+15 <span style={{ fontSize: '1rem', color: 'var(--c-neon-blue)', fontWeight: 600 }}>anos</span></h3>
-                <p style={{ color: 'rgba(255,255,255,0.6)', fontSize: '0.875rem', fontWeight: 500, textTransform: 'uppercase', letterSpacing: '1px' }}>De Experiência</p>
-              </div>
-              <div>
-                <h3 style={{ fontSize: '2rem', color: 'var(--c-white)', marginBottom: '0.25rem' }}>99.9<span style={{ fontSize: '1rem', color: 'var(--c-neon-blue)', fontWeight: 600 }}>%</span></h3>
-                <p style={{ color: 'rgba(255,255,255,0.6)', fontSize: '0.875rem', fontWeight: 500, textTransform: 'uppercase', letterSpacing: '1px' }}>SLA Cumprido</p>
-              </div>
-              <div>
-                <h3 style={{ fontSize: '2rem', color: 'var(--c-white)', marginBottom: '0.25rem' }}>100<span style={{ fontSize: '1rem', color: 'var(--c-neon-blue)', fontWeight: 600 }}>%</span></h3>
-                <p style={{ color: 'rgba(255,255,255,0.6)', fontSize: '0.875rem', fontWeight: 500, textTransform: 'uppercase', letterSpacing: '1px' }}>Cobertura Nacional</p>
-              </div>
-              <div>
-                <h3 style={{ fontSize: '2rem', color: 'var(--c-white)', marginBottom: '0.25rem' }}>+500</h3>
-                <p style={{ color: 'rgba(255,255,255,0.6)', fontSize: '0.875rem', fontWeight: 500, textTransform: 'uppercase', letterSpacing: '1px' }}>Clientes Enterprise</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* Hero Section Carousel */}
+      <HeroCarousel />
 
       {/* Seção de Clientes */}
       <section style={{ padding: '3rem 0', background: 'var(--c-white)', borderBottom: '1px solid var(--c-border-light)' }}>
