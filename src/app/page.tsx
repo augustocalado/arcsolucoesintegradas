@@ -129,12 +129,11 @@ export default function Home() {
           </div>
           
           <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '4rem', flexWrap: 'wrap', opacity: 0.7 }}>
-            <img src="/images/logo_marisa.png" alt="Marisa" style={{ height: '30px', filter: 'grayscale(100%) brightness(0.5)' }} />
-            <img src="/images/logo_cea.svg" alt="C&A" style={{ height: '35px', filter: 'grayscale(100%) brightness(0.5)' }} />
-            <img src="/images/logo_caedu.png" alt="Caedu" style={{ height: '35px', filter: 'grayscale(100%) brightness(0.5)' }} />
-            <img src="/images/logo_drogaria_total.png" alt="Drogaria Total" style={{ height: '40px', filter: 'grayscale(100%) brightness(0.5)' }} />
-            <img src="/images/logo_calvin_klein.png" alt="Calvin Klein" style={{ height: '25px', filter: 'grayscale(100%) brightness(0.5)' }} />
-            <img src="/images/logo_chanel.png" alt="Chanel" style={{ height: '30px', filter: 'grayscale(100%) brightness(0.5)' }} />
+            <img src="/images/logo_marisa.png" alt="Marisa" style={{ height: '30px', filter: 'grayscale(100%)' }} />
+            <img src="/images/logo_caedu.png" alt="Caedu" style={{ height: '35px', filter: 'grayscale(100%)' }} />
+            <div style={{ fontSize: '1.5rem', fontWeight: 900, color: 'var(--c-dark-blue)', letterSpacing: '-1px' }}>Bradesco</div>
+            <div style={{ fontSize: '1.5rem', fontWeight: 900, color: 'var(--c-dark-blue)', letterSpacing: '-1px' }}>Bifarma</div>
+            <div style={{ fontSize: '1.5rem', fontWeight: 900, color: 'var(--c-dark-blue)', letterSpacing: '-1px' }}>Localiza</div>
           </div>
         </div>
       </section>

@@ -26,11 +26,10 @@ export default function AdminClients() {
   
   const initialClients: Client[] = [
     { id: '1', name: 'Marisa', logo: '/images/logo_marisa.png', status: 'Ativo' },
-    { id: '2', name: 'C&A', logo: '/images/logo_cea.svg', status: 'Ativo' },
-    { id: '3', name: 'Caedu', logo: '/images/logo_caedu.png', status: 'Ativo' },
-    { id: '4', name: 'Drogaria Total', logo: '/images/logo_drogaria_total.png', status: 'Ativo' },
-    { id: '5', name: 'Calvin Klein', logo: '/images/logo_calvin_klein.png', status: 'Ativo' },
-    { id: '6', name: 'Chanel', logo: '/images/logo_chanel.png', status: 'Ativo' },
+    { id: '2', name: 'Caedu', logo: '/images/logo_caedu.png', status: 'Ativo' },
+    { id: '3', name: 'Bradesco', logo: '', status: 'Ativo' },
+    { id: '4', name: 'Bifarma', logo: '', status: 'Ativo' },
+    { id: '5', name: 'Localiza', logo: '', status: 'Ativo' },
   ];
 
   const [clients, setClients] = useState(initialClients);
