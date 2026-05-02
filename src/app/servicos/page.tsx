@@ -37,7 +37,7 @@ export default function Servicos() {
       title: 'Manutenção Preventiva e Corretiva', 
       desc: 'Contratos de SLA rigorosos garantindo uptime dos sistemas. Rotinas de inspeção, limpeza de equipamentos, atualização de firmware e substituição de peças com agilidade nacional.', 
       icon: <Wrench size={48} />,
-      image: '/images/tecnico_clean_1777418478324.png'
+      image: 'https://lh3.googleusercontent.com/a-/ALV-UjWnTbi1i586gmBeKsmH1jVp88oH5v8fc9TRwMg7p1s2xmOMaXU=w1905'
     },
     { 
       id: 'seguranca-para-redes-varejistas',
