@@ -7,10 +7,14 @@ export default function Footer() {
     <footer style={{ backgroundColor: 'var(--c-dark-blue)', borderTop: '1px solid var(--c-blue-accent)', paddingTop: '4rem', paddingBottom: '2rem' }}>
       <div className="container grid grid-cols-4">
         <div>
-          <Link href="/" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '1rem' }}>
-            <Shield color="var(--c-neon-blue)" size={28} />
-            <span style={{ fontSize: '1.25rem', fontWeight: 800, fontFamily: 'var(--font-heading)', color: 'var(--c-white)' }}>
-              ARC TECH<span style={{ color: 'var(--c-neon-blue)' }}>.</span>
+          <Link href="/" style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '1rem' }}>
+            <img 
+              src="https://lh3.googleusercontent.com/a-/ALV-UjWnTbi1i586gmBeKsmH1jVp88oH5v8fc9TRwMg7p1s2xmOMaXU=w1905" 
+              alt="Logo" 
+              style={{ width: '32px', height: '32px', borderRadius: '50%', objectFit: 'cover' }} 
+            />
+            <span style={{ fontSize: '1.125rem', fontWeight: 700, fontFamily: 'var(--font-heading)', color: 'var(--c-white)' }}>
+              Arc Soluções Integradas
             </span>
           </Link>
           <p style={{ color: 'var(--c-metallic-light)', fontSize: '0.875rem', marginBottom: '1.5rem' }}>
@@ -66,7 +70,7 @@ export default function Footer() {
       </div>
       
       <div className="container" style={{ marginTop: '3rem', paddingTop: '1.5rem', borderTop: '1px solid var(--c-blue-accent)', textAlign: 'center', color: 'var(--c-metallic)', fontSize: '0.75rem' }}>
-        <p>&copy; {new Date().getFullYear()} ARC TECH. Todos os direitos reservados.</p>
+        <p>&copy; {new Date().getFullYear()} Arc Soluções Integradas. Todos os direitos reservados.</p>
       </div>
     </footer>
   );
