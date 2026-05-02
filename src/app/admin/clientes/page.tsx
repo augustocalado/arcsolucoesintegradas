@@ -28,8 +28,8 @@ export default function AdminClients() {
     { id: '1', name: 'Marisa', logo: '/images/logo_marisa.png', status: 'Ativo' },
     { id: '2', name: 'Caedu', logo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTD8XwofHDEtViXRSYMUv2YqTWXEEdJZh57vg&s', status: 'Ativo' },
     { id: '3', name: 'Bradesco', logo: '/images/logo_bradesco.png', status: 'Ativo' },
-    { id: '4', name: 'Bifarma', logo: '', status: 'Ativo' },
-    { id: '5', name: 'Localiza', logo: '/images/logo_localiza.png', status: 'Ativo' },
+    { id: '4', name: 'Bifarma', logo: '/images/logo_bifarma.png', status: 'Ativo' },
+    { id: '5', name: 'Localiza', logo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJbudB5itpk5cogHtvqLYMMaOf6ibRP2CUwg&s', status: 'Ativo' },
     { id: '6', name: 'Tenda Atacadista', logo: '/images/logo_tenda.png', status: 'Ativo' },
   ];
 

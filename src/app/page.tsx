@@ -138,8 +138,8 @@ export default function Home() {
               { name: 'Marisa', logo: '/images/logo_marisa.png' },
               { name: 'Caedu', logo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTD8XwofHDEtViXRSYMUv2YqTWXEEdJZh57vg&s' },
               { name: 'Bradesco', logo: '/images/logo_bradesco.png' },
-              { name: 'Bifarma', logo: '' },
-              { name: 'Localiza', logo: '/images/logo_localiza.png' },
+              { name: 'Bifarma', logo: '/images/logo_bifarma.png' },
+              { name: 'Localiza', logo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJbudB5itpk5cogHtvqLYMMaOf6ibRP2CUwg&s' },
               { name: 'Tenda Atacadista', logo: '/images/logo_tenda.png' },
             ].map((client, index) => (
               <div key={index} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '70px', padding: '0 10px' }}>
