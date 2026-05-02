@@ -6,24 +6,24 @@ import Footer from '@/components/Footer';
 export const metadata: Metadata = {
   metadataBase: new URL('https://arcsolucoesintegradas.com.br'),
   title: {
-    default: 'ARC TECH | Segurança Eletrônica Corporativa Premium',
-    template: '%s | ARC TECH'
+    default: 'Arc Soluções Integradas | Segurança Eletrônica Corporativa',
+    template: '%s | Arc Soluções Integradas'
   },
-  description: 'Especialistas em CFTV Inteligente, Controle de Acesso e Sistemas Antifurto para Redes Varejistas. Atendimento nacional e suporte técnico especializado com padrão enterprise.',
-  keywords: ['segurança eletrônica', 'cftv corporativo', 'antenas antifurto', 'controle de acesso', 'segurança para varejo', 'manutenção preventiva', 'ARC TECH'],
-  authors: [{ name: 'ARC TECH' }],
-  creator: 'ARC TECH',
-  publisher: 'ARC TECH',
+  description: 'Líder em Segurança Eletrônica Corporativa: CFTV Inteligente, Controle de Acesso e Antenas Antifurto. Soluções completas para grandes redes de varejo e empresas em todo o Brasil.',
+  keywords: ['segurança eletrônica', 'Arc Soluções Integradas', 'cftv corporativo', 'antenas antifurto', 'controle de acesso', 'segurança varejo', 'infraestrutura de segurança'],
+  authors: [{ name: 'Arc Soluções Integradas' }],
+  creator: 'Arc Soluções Integradas',
+  publisher: 'Arc Soluções Integradas',
   formatDetection: {
     email: false,
     address: false,
     telephone: false,
   },
   openGraph: {
-    title: 'ARC TECH | Segurança Eletrônica Corporativa',
-    description: 'Alta tecnologia em segurança para o seu negócio com cobertura em todo o Brasil. Projetos personalizados e SLA garantido.',
+    title: 'Arc Soluções Integradas | Segurança Eletrônica Corporativa',
+    description: 'Alta tecnologia em segurança para o seu negócio com cobertura em todo o Brasil. Projetos personalizados e suporte especializado.',
     url: 'https://arcsolucoesintegradas.com.br',
-    siteName: 'ARC TECH',
+    siteName: 'Arc Soluções Integradas',
     locale: 'pt_BR',
     type: 'website',
   },
