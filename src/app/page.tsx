@@ -129,11 +129,10 @@ export default function Home() {
           
           <div style={{ 
             display: 'grid', 
-            gridTemplateColumns: 'repeat(auto-fit, minmax(160px, 1fr))', 
-            gap: '2.5rem', 
+            gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))', 
+            gap: '3rem', 
             alignItems: 'center', 
-            justifyContent: 'center',
-            opacity: 0.8
+            justifyContent: 'center'
           }}>
             {[
               { name: 'Marisa', logo: '/images/logo_marisa.png' },
@@ -143,7 +142,7 @@ export default function Home() {
               { name: 'Localiza', logo: '/images/logo_localiza.png' },
               { name: 'Tenda Atacadista', logo: '/images/logo_tenda.png' },
             ].map((client, index) => (
-              <div key={index} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '50px' }}>
+              <div key={index} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '70px', padding: '0 10px' }}>
                 {client.logo ? (
                   <img 
                     src={client.logo} 
@@ -151,8 +150,7 @@ export default function Home() {
                     style={{ 
                       maxHeight: '100%', 
                       maxWidth: '100%', 
-                      objectFit: 'contain',
-                      filter: 'grayscale(100%) brightness(0.8)' 
+                      objectFit: 'contain'
                     }} 
                   />
                 ) : (
