@@ -59,9 +59,13 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
       }}>
         <div style={{ padding: '2rem', display: 'flex', flexDirection: 'column', height: '100%' }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '3rem' }}>
-            <Shield color="var(--c-neon-blue)" size={32} />
-            <span style={{ fontSize: '1.5rem', fontWeight: 800, fontFamily: 'var(--font-heading)' }}>
-              ARC<span style={{ color: 'var(--c-neon-blue)' }}> TECH</span>
+            <img 
+              src="https://lh3.googleusercontent.com/a-/ALV-UjWnTbi1i586gmBeKsmH1jVp88oH5v8fc9TRwMg7p1s2xmOMaXU=w1905" 
+              alt="Logo Arc Soluções" 
+              style={{ width: '40px', height: '40px', borderRadius: '50%', background: 'black', padding: '2px' }} 
+            />
+            <span style={{ fontSize: '1.25rem', fontWeight: 700, fontFamily: 'var(--font-heading)' }}>
+              Arc Soluções
             </span>
           </div>
 

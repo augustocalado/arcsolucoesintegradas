@@ -120,6 +120,25 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Clientes Section - Re-posicionada para o final */}
+      <section style={{ padding: '5rem 0', background: 'var(--c-bg-light)', borderTop: '1px solid var(--c-border-light)' }}>
+        <div className="container">
+          <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
+            <h2 style={{ fontSize: '2rem', marginBottom: '1rem', color: 'var(--c-dark-blue)' }}>Empresas que confiam na <span className="text-primary">Arc Soluções</span></h2>
+            <p style={{ color: 'var(--c-metallic)' }}>Tecnologia e suporte especializado para as maiores redes do país.</p>
+          </div>
+          
+          <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '4rem', flexWrap: 'wrap', opacity: 0.7 }}>
+            <img src="/images/logo_marisa.png" alt="Marisa" style={{ height: '30px', filter: 'grayscale(100%) brightness(0.5)' }} />
+            <img src="/images/logo_cea.svg" alt="C&A" style={{ height: '35px', filter: 'grayscale(100%) brightness(0.5)' }} />
+            <img src="/images/logo_caedu.png" alt="Caedu" style={{ height: '35px', filter: 'grayscale(100%) brightness(0.5)' }} />
+            <img src="/images/logo_drogaria_total.png" alt="Drogaria Total" style={{ height: '40px', filter: 'grayscale(100%) brightness(0.5)' }} />
+            <img src="/images/logo_calvin_klein.png" alt="Calvin Klein" style={{ height: '25px', filter: 'grayscale(100%) brightness(0.5)' }} />
+            <img src="/images/logo_chanel.png" alt="Chanel" style={{ height: '30px', filter: 'grayscale(100%) brightness(0.5)' }} />
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section - Sophisticated */}
       <section className="section-padding" style={{ background: 'var(--c-bg-light)', borderTop: '1px solid var(--c-border-light)' }}>
         <div className="container">
