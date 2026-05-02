@@ -9,22 +9,6 @@ export default function Home() {
       {/* Hero Section Carousel */}
       <HeroCarousel />
 
-      {/* Seção de Clientes */}
-      <section style={{ padding: '3rem 0', background: 'var(--c-white)', borderBottom: '1px solid var(--c-border-light)' }}>
-        <div className="container">
-          <p style={{ textAlign: 'center', color: 'var(--c-metallic)', fontSize: '0.875rem', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '1px', marginBottom: '2rem' }}>
-            Grandes redes confiam em nossa tecnologia
-          </p>
-          <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '4rem', flexWrap: 'wrap' }}>
-            <img src="/images/logo_marisa.png" alt="Marisa" className="client-logo" style={{ height: '30px' }} />
-            <img src="/images/logo_cea.svg" alt="C&A" className="client-logo" style={{ height: '35px' }} />
-            <img src="/images/logo_caedu.png" alt="Caedu" className="client-logo" style={{ height: '35px' }} />
-            <img src="/images/logo_drogaria_total.png" alt="Drogaria Total" className="client-logo" style={{ height: '40px' }} />
-            <img src="/images/logo_calvin_klein.png" alt="Calvin Klein" className="client-logo" style={{ height: '25px' }} />
-            <img src="/images/logo_chanel.png" alt="Chanel" className="client-logo" style={{ height: '30px' }} />
-          </div>
-        </div>
-      </section>
 
       {/* Services Section - Clean and Professional */}
       <section className="section-padding">
