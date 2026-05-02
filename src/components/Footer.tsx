@@ -14,7 +14,7 @@ export default function Footer() {
               style={{ width: '32px', height: '32px', borderRadius: '50%', objectFit: 'cover' }} 
             />
             <span style={{ fontSize: '1.125rem', fontWeight: 700, fontFamily: 'var(--font-heading)', color: 'var(--c-white)' }}>
-              Arc Soluções Integradas
+              A<span style={{ color: 'var(--c-neon-blue)' }}>r</span>c Soluções Integradas
             </span>
           </Link>
           <p style={{ color: 'var(--c-metallic-light)', fontSize: '0.875rem', marginBottom: '1.5rem' }}>

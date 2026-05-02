@@ -25,7 +25,7 @@ export default function Header() {
             }} 
           />
           <span style={{ fontSize: '1.5rem', fontWeight: 800, fontFamily: 'var(--font-heading)', color: 'var(--c-dark-blue)', lineHeight: 1.2 }}>
-            Arc Soluções<br /><span style={{ fontSize: '1.1rem', fontWeight: 600, color: 'var(--c-blue-primary)' }}>Integradas</span>
+            A<span style={{ color: 'var(--c-blue-primary)' }}>r</span>c Soluções<br /><span style={{ fontSize: '1.1rem', fontWeight: 600, color: 'var(--c-blue-primary)' }}>Integradas</span>
           </span>
         </Link>
         
