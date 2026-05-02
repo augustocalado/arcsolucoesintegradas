@@ -8,13 +8,15 @@ export default function Footer() {
       <div className="container grid grid-cols-4">
         <div>
           <Link href="/" style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '1rem' }}>
-            <img 
-              src="https://lh3.googleusercontent.com/a-/ALV-UjWnTbi1i586gmBeKsmH1jVp88oH5v8fc9TRwMg7p1s2xmOMaXU=w1905" 
-              alt="Logo" 
-              style={{ width: '32px', height: '32px', borderRadius: '50%', objectFit: 'cover' }} 
-            />
+            <div style={{ width: '40px', height: '40px', borderRadius: '50%', background: '#000', display: 'flex', alignItems: 'center', justifyContent: 'center', overflow: 'hidden', border: '1px solid var(--c-neon-blue)' }}>
+              <img 
+                src="https://lh3.googleusercontent.com/a-/ALV-UjWnTbi1i586gmBeKsmH1jVp88oH5v8fc9TRwMg7p1s2xmOMaXU=w1905" 
+                alt="Logo Arc Soluções" 
+                style={{ width: '100%', height: '100%', objectFit: 'cover' }} 
+              />
+            </div>
             <span style={{ fontSize: '1.125rem', fontWeight: 700, fontFamily: 'var(--font-heading)', color: 'var(--c-white)' }}>
-              A<span style={{ color: 'var(--c-neon-blue)' }}>r</span>c Soluções Integradas
+              Arc Soluções Integradas
             </span>
           </Link>
           <p style={{ color: 'var(--c-metallic-light)', fontSize: '0.875rem', marginBottom: '1.5rem' }}>

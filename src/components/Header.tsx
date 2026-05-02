@@ -11,21 +11,26 @@ export default function Header() {
     <header className="header">
       <div className="container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
         <Link href="/" style={{ display: 'flex', alignItems: 'center', gap: '1rem', position: 'relative', zIndex: 1001 }}>
-          <img 
-            src="https://lh3.googleusercontent.com/a-/ALV-UjWnTbi1i586gmBeKsmH1jVp88oH5v8fc9TRwMg7p1s2xmOMaXU=w1905" 
-            alt="Logo Arc Soluções" 
-            style={{ 
-              width: '56px', 
-              height: '56px', 
-              borderRadius: '50%', 
-              objectFit: 'cover',
-              filter: 'invert(1)',
-              mixBlendMode: 'multiply',
-              border: '1px solid rgba(0,0,0,0.05)'
-            }} 
-          />
-          <span style={{ fontSize: '1.5rem', fontWeight: 800, fontFamily: 'var(--font-heading)', color: 'var(--c-dark-blue)', lineHeight: 1.2 }}>
-            A<span style={{ color: 'var(--c-blue-primary)' }}>r</span>c Soluções<br /><span style={{ fontSize: '1.1rem', fontWeight: 600, color: 'var(--c-blue-primary)' }}>Integradas</span>
+          <div style={{ 
+            width: '52px', 
+            height: '52px', 
+            borderRadius: '50%', 
+            background: '#000', 
+            display: 'flex', 
+            alignItems: 'center', 
+            justifyContent: 'center', 
+            overflow: 'hidden',
+            boxShadow: '0 4px 10px rgba(0,0,0,0.1)',
+            border: '2px solid var(--c-blue-primary)'
+          }}>
+            <img 
+              src="https://lh3.googleusercontent.com/a-/ALV-UjWnTbi1i586gmBeKsmH1jVp88oH5v8fc9TRwMg7p1s2xmOMaXU=w1905" 
+              alt="Logo Arc Soluções" 
+              style={{ width: '100%', height: '100%', objectFit: 'cover' }} 
+            />
+          </div>
+          <span style={{ fontSize: '1.25rem', fontWeight: 700, fontFamily: 'var(--font-heading)', color: 'var(--c-dark-blue)' }}>
+            Arc Soluções Integradas
           </span>
         </Link>
         
