@@ -46,13 +46,7 @@ export default function Servicos() {
       icon: <Map size={48} />,
       image: '/images/relatorio_varejo_1777417991714.png'
     },
-    { 
-      id: 'alarmes-empresariais',
-      title: 'Alarmes e Detecção de Intrusão', 
-      desc: 'Sistemas avançados de detecção, botões de pânico silenciosos, sensores de quebra de vidro e integração direta com central de monitoramento 24h.', 
-      icon: <ShieldAlert size={48} />,
-      image: '/images/alarme_intelbras_1777418492213.png'
-    }
+
   ];
 
   return (

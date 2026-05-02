@@ -94,13 +94,13 @@ const seoPages: Record<string, {
   },
   'alarmes-empresariais': {
     title: 'Sistemas de Alarmes Empresariais | ARC TECH',
-    desc: 'Alarmes de intrusão, sensores avançados e monitoramento 24h para proteger o patrimônio da sua empresa. Projetos corporativos sob medida.',
+    desc: 'Alarmes de intrusão, sensores avançados para proteger o patrimônio da sua empresa. Projetos corporativos sob medida.',
     h1: 'Sistemas de Alarmes Corporativos',
-    subtitle: 'Detecção rápida e resposta imediata. Mantenha sua empresa protegida fora do horário comercial.',
+    subtitle: 'Detecção rápida e notificação imediata. Mantenha sua empresa protegida fora do horário comercial.',
     keywords: 'alarmes empresariais, sistema de alarme corporativo, detecção de intrusão, segurança eletrônica',
     schema: 'Service',
     aboutTitle: 'Detecção de Intrusão de Alta Precisão',
-    aboutText: 'Nossos sistemas de alarme utilizam sensores de tripla tecnologia (infravermelho, micro-ondas e IA) para eliminar alarmes falsos enquanto garantem a detecção imediata de qualquer tentativa de invasão em perímetros corporativos.',
+    aboutText: 'Nossos sistemas de alarme utilizam sensores de tripla tecnologia (infravermelho, micro-ondas e IA) para eliminar alarmes falsos enquanto garantem a detecção imediata de qualquer tentativa de invasão em perímetros corporativos, enviando notificações instantâneas para os gestores responsáveis.',
     features: [
       'Sensores infravermelhos com compensação de temperatura',
       'Barreiras perimetrais invisíveis de longo alcance',
@@ -153,7 +153,7 @@ const seoPages: Record<string, {
     aboutTitle: 'Blindando sua Operação de Varejo',
     aboutText: 'Entendemos os desafios do varejo: furtos externos, internos e erros operacionais. Nossas soluções para lojas combinam Antenas EAS de última geração com CFTV de alta resolução posicionado estrategicamente para cobrir cada corredor e PDV.',
     features: [
-      'Monitoramento de frentes de caixa para evitar fraudes',
+      'Análise de vídeo para prevenção de furtos',
       'Antenas antifurto AM/RF de alta sensibilidade',
       'Câmeras panorâmicas de 360 graus para cobertura total',
       'Integração com sistemas de alarme de intrusão',

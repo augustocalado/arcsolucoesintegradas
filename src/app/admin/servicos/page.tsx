@@ -21,7 +21,7 @@ export default function AdminServices() {
   const [isEditing, setIsEditing] = useState<string | null>(null);
 
   const initialServices = [
-    { id: 'cftv-inteligente', title: 'CFTV Corporativo Inteligente', category: 'Monitoramento', status: 'Ativo' },
+    { id: 'cftv-inteligente', title: 'CFTV Corporativo Inteligente', category: 'Segurança de Vídeo', status: 'Ativo' },
     { id: 'antenas-antifurto', title: 'Sistemas Antifurto (EAS)', category: 'Varejo', status: 'Ativo' },
     { id: 'controle-de-acesso', title: 'Controle de Acesso Enterprise', category: 'Infraestrutura', status: 'Ativo' },
     { id: 'manutencao-preventiva', title: 'Manutenção Preventiva', category: 'Suporte', status: 'Ativo' },

@@ -24,8 +24,7 @@ export default function Home() {
               { title: 'Antenas Antifurto', desc: 'Soluções EAS discretas e modernas, com alta taxa de detecção para redução drástica de perdas em loja.', icon: <Radio size={32} />, link: '/servicos/antenas-antifurto' },
               { title: 'Controle de Acesso', desc: 'Gestão de fluxo corporativo com catracas, biometria e softwares centralizados para múltiplas filiais.', icon: <Lock size={32} />, link: '/servicos/controle-de-acesso' },
               { title: 'Manutenção Preventiva', desc: 'Rotinas rigorosas de inspeção para garantir 100% de disponibilidade dos seus equipamentos de segurança.', icon: <Wrench size={32} />, link: '/servicos/manutencao-preventiva' },
-              { title: 'Inteligência de Varejo', desc: 'Integração de dados de fluxo e mapas de calor para otimização de layout de loja e inteligência de negócios.', icon: <Map size={32} />, link: '/servicos/seguranca-para-redes-varejistas' },
-              { title: 'NOC & Suporte 24/7', desc: 'Monitoramento contínuo de health check da infraestrutura, garantindo resposta imediata a qualquer falha técnica.', icon: <Clock size={32} />, link: '/servicos/suporte-emergencial' }
+              { title: 'Inteligência de Varejo', desc: 'Integração de dados de fluxo e mapas de calor para otimização de layout de loja e inteligência de negócios.', icon: <Map size={32} />, link: '/servicos/seguranca-para-redes-varejistas' }
             ].map((service, index) => (
               <div key={index} className="premium-card">
                 <div style={{ width: '64px', height: '64px', borderRadius: '16px', background: 'rgba(0, 86, 210, 0.08)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--c-blue-primary)', marginBottom: '1.5rem' }}>
@@ -72,13 +71,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="premium-card" style={{ padding: 0, overflow: 'hidden' }}>
-              <img src="/images/case_noc_monitoring_1777419631868.png" alt="Monitoramento Centralizado" style={{ width: '100%', height: '250px', objectFit: 'cover' }} />
-              <div style={{ padding: '2rem' }}>
-                <h3 style={{ fontSize: '1.25rem', marginBottom: '0.5rem', color: 'var(--c-dark-blue)' }}>Central de Monitoramento</h3>
-                <p style={{ color: 'var(--c-metallic)', fontSize: '0.9rem' }}>Operação NOC 24/7 centralizando dados de centenas de filiais em tempo real.</p>
-              </div>
-            </div>
+
           </div>
         </div>
       </section>

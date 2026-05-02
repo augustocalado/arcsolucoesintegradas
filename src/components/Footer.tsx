@@ -18,7 +18,7 @@ export default function Footer() {
             </span>
           </Link>
           <p style={{ color: 'var(--c-metallic-light)', fontSize: '0.875rem', marginBottom: '1.5rem' }}>
-            Especialistas em Segurança Eletrônica Corporativa para Redes Varejistas. Atendimento nacional com padrão enterprise.
+            Especialistas em Segurança Eletrônica Corporativa para Redes Varejistas. Atendimento nacional com projetos personalizados.
           </p>
           <div style={{ display: 'flex', gap: '1rem' }}>
             <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="social-icon">
