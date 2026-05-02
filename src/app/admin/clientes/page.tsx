@@ -26,10 +26,11 @@ export default function AdminClients() {
   
   const initialClients: Client[] = [
     { id: '1', name: 'Marisa', logo: '/images/logo_marisa.png', status: 'Ativo' },
-    { id: '2', name: 'Caedu', logo: '/images/logo_caedu.png', status: 'Ativo' },
-    { id: '3', name: 'Bradesco', logo: '', status: 'Ativo' },
+    { id: '2', name: 'Caedu', logo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTD8XwofHDEtViXRSYMUv2YqTWXEEdJZh57vg&s', status: 'Ativo' },
+    { id: '3', name: 'Bradesco', logo: '/images/logo_bradesco.png', status: 'Ativo' },
     { id: '4', name: 'Bifarma', logo: '', status: 'Ativo' },
-    { id: '5', name: 'Localiza', logo: '', status: 'Ativo' },
+    { id: '5', name: 'Localiza', logo: '/images/logo_localiza.png', status: 'Ativo' },
+    { id: '6', name: 'Tenda Atacadista', logo: '/images/logo_tenda.png', status: 'Ativo' },
   ];
 
   const [clients, setClients] = useState(initialClients);
@@ -71,8 +72,12 @@ export default function AdminClients() {
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(200px, 1fr))', gap: '2rem' }}>
             {filteredClients.map((client) => (
               <div key={client.id} className="premium-card" style={{ position: 'relative', display: 'flex', flexDirection: 'column', alignItems: 'center', padding: '1.5rem', transition: 'all 0.3s' }}>
-                <div style={{ width: '100%', height: '80px', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '1rem' }}>
-                  <img src={client.logo} alt={client.name} style={{ maxHeight: '100%', maxWidth: '80%', objectFit: 'contain' }} />
+                <div style={{ width: '100%', height: '80px', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '1rem', background: client.logo ? 'transparent' : 'rgba(0,0,0,0.03)', borderRadius: '8px' }}>
+                  {client.logo ? (
+                    <img src={client.logo} alt={client.name} style={{ maxHeight: '100%', maxWidth: '80%', objectFit: 'contain' }} />
+                  ) : (
+                    <span style={{ fontSize: '1rem', fontWeight: 800, color: 'var(--c-metallic)', opacity: 0.5 }}>{client.name}</span>
+                  )}
                 </div>
                 <h3 style={{ fontSize: '1.125rem', color: 'var(--c-dark-blue)', marginBottom: '0.5rem' }}>{client.name}</h3>
                 

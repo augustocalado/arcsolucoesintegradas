@@ -120,20 +120,46 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Clientes Section - Re-posicionada para o final */}
       <section style={{ padding: '5rem 0', background: 'var(--c-bg-light)', borderTop: '1px solid var(--c-border-light)' }}>
         <div className="container">
-          <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
+          <div style={{ textAlign: 'center', marginBottom: '4rem' }}>
             <h2 style={{ fontSize: '2rem', marginBottom: '1rem', color: 'var(--c-dark-blue)' }}>Empresas que confiam na <span className="text-primary">Arc Soluções</span></h2>
             <p style={{ color: 'var(--c-metallic)' }}>Tecnologia e suporte especializado para as maiores redes do país.</p>
           </div>
           
-          <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '4rem', flexWrap: 'wrap', opacity: 0.7 }}>
-            <img src="/images/logo_marisa.png" alt="Marisa" style={{ height: '30px', filter: 'grayscale(100%)' }} />
-            <img src="/images/logo_caedu.png" alt="Caedu" style={{ height: '35px', filter: 'grayscale(100%)' }} />
-            <div style={{ fontSize: '1.5rem', fontWeight: 900, color: 'var(--c-dark-blue)', letterSpacing: '-1px' }}>Bradesco</div>
-            <div style={{ fontSize: '1.5rem', fontWeight: 900, color: 'var(--c-dark-blue)', letterSpacing: '-1px' }}>Bifarma</div>
-            <div style={{ fontSize: '1.5rem', fontWeight: 900, color: 'var(--c-dark-blue)', letterSpacing: '-1px' }}>Localiza</div>
+          <div style={{ 
+            display: 'grid', 
+            gridTemplateColumns: 'repeat(auto-fit, minmax(160px, 1fr))', 
+            gap: '2.5rem', 
+            alignItems: 'center', 
+            justifyContent: 'center',
+            opacity: 0.8
+          }}>
+            {[
+              { name: 'Marisa', logo: '/images/logo_marisa.png' },
+              { name: 'Caedu', logo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTD8XwofHDEtViXRSYMUv2YqTWXEEdJZh57vg&s' },
+              { name: 'Bradesco', logo: '/images/logo_bradesco.png' },
+              { name: 'Bifarma', logo: '' },
+              { name: 'Localiza', logo: '/images/logo_localiza.png' },
+              { name: 'Tenda Atacadista', logo: '/images/logo_tenda.png' },
+            ].map((client, index) => (
+              <div key={index} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '50px' }}>
+                {client.logo ? (
+                  <img 
+                    src={client.logo} 
+                    alt={client.name} 
+                    style={{ 
+                      maxHeight: '100%', 
+                      maxWidth: '100%', 
+                      objectFit: 'contain',
+                      filter: 'grayscale(100%) brightness(0.8)' 
+                    }} 
+                  />
+                ) : (
+                  <span style={{ fontSize: '1.25rem', fontWeight: 900, color: 'var(--c-dark-blue)', letterSpacing: '-1px', opacity: 0.5 }}>{client.name}</span>
+                )}
+              </div>
+            ))}
           </div>
         </div>
       </section>
