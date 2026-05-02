@@ -221,14 +221,35 @@ export default async function ServiceSlugPage({ params }: { params: Promise<{ sl
 
   const schemaMarkup = {
     "@context": "https://schema.org",
-    "@type": pageData.schema,
-    "name": pageData.h1,
+    "@type": "Service",
+    "serviceType": pageData.title,
     "provider": {
       "@type": "LocalBusiness",
       "name": "ARC TECH",
-      "image": "https://ARC TECH.com.br/logo.png"
+      "image": "https://arcsolucoesintegradas.com.br/images/banner_antenas_premium_varejo_1777670014515.png",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "São Paulo",
+        "addressRegion": "SP",
+        "addressCountry": "BR"
+      },
+      "telephone": "+5511998937891",
+      "url": "https://arcsolucoesintegradas.com.br"
     },
-    "description": pageData.desc
+    "areaServed": {
+      "@type": "Country",
+      "name": "Brazil"
+    },
+    "description": pageData.aboutText,
+    "brand": {
+      "@type": "Brand",
+      "name": "ARC TECH"
+    },
+    "offers": {
+      "@type": "Offer",
+      "availability": "https://schema.org/InStock",
+      "areaServed": "BR"
+    }
   };
 
   return (

@@ -4,15 +4,31 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
-  title: 'ARC TECH | Segurança Eletrônica Corporativa Premium',
-  description: 'Especialistas em CFTV Inteligente, Controle de Acesso e Sistemas Antifurto para Redes Varejistas. Atendimento nacional e suporte técnico especializado.',
+  metadataBase: new URL('https://arcsolucoesintegradas.com.br'),
+  title: {
+    default: 'ARC TECH | Segurança Eletrônica Corporativa Premium',
+    template: '%s | ARC TECH'
+  },
+  description: 'Especialistas em CFTV Inteligente, Controle de Acesso e Sistemas Antifurto para Redes Varejistas. Atendimento nacional e suporte técnico especializado com padrão enterprise.',
+  keywords: ['segurança eletrônica', 'cftv corporativo', 'antenas antifurto', 'controle de acesso', 'segurança para varejo', 'manutenção preventiva', 'ARC TECH'],
+  authors: [{ name: 'ARC TECH' }],
+  creator: 'ARC TECH',
+  publisher: 'ARC TECH',
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
   openGraph: {
-    title: 'ARC TECH | Segurança Corporativa',
-    description: 'Alta tecnologia em segurança para o seu negócio com cobertura em todo o Brasil.',
-    url: 'https://ARC TECH.com.br',
+    title: 'ARC TECH | Segurança Eletrônica Corporativa',
+    description: 'Alta tecnologia em segurança para o seu negócio com cobertura em todo o Brasil. Projetos personalizados e SLA garantido.',
+    url: 'https://arcsolucoesintegradas.com.br',
     siteName: 'ARC TECH',
     locale: 'pt_BR',
     type: 'website',
+  },
+  alternates: {
+    canonical: 'https://arcsolucoesintegradas.com.br',
   },
   robots: {
     index: true,
