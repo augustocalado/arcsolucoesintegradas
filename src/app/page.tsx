@@ -56,7 +56,7 @@ export default function Home() {
 
           <div className="grid grid-cols-3">
             <div className="premium-card" style={{ padding: 0, overflow: 'hidden' }}>
-              <img src="/images/case_marisa_rf_generated_1777419740237.png" alt="Implementação Antenas Marisa" style={{ width: '100%', height: '250px', objectFit: 'cover' }} />
+              <img src="/images/premium_antena_antifurto_arc_tech.png" alt="Implementação Antenas Varejo" style={{ width: '100%', height: '250px', objectFit: 'cover' }} />
               <div style={{ padding: '2rem' }}>
                 <h3 style={{ fontSize: '1.25rem', marginBottom: '0.5rem', color: 'var(--c-dark-blue)' }}>Antenas RF e Prevenção</h3>
                 <p style={{ color: 'var(--c-metallic)', fontSize: '0.9rem' }}>Implementação de antenas antifurto elegantes na entrada, sem impactar a arquitetura visual da loja.</p>
@@ -135,7 +135,6 @@ export default function Home() {
             justifyContent: 'center'
           }}>
             {[
-              { name: 'Marisa', logo: '/images/logo_marisa.png' },
               { name: 'Caedu', logo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTD8XwofHDEtViXRSYMUv2YqTWXEEdJZh57vg&s' },
               { name: 'Bradesco', logo: '/images/logo_bradesco.png' },
               { name: 'Bifarma', logo: '/images/logo_bifarma.png' },

@@ -79,9 +79,9 @@ const seoPages: Record<string, {
     subtitle: 'Gestão inteligente de entradas e saídas. Proteja áreas restritas com tecnologia biométrica e facial de alta precisão.',
     keywords: 'controle de acesso, biometria corporativa, catracas de acesso, reconhecimento facial para empresas',
     schema: 'Service',
-    heroImage: '/images/catracas_marisa_1777418461276.png',
-    heroPosition: 'center 60%',
-    heroSize: '110%',
+    heroImage: '/images/catracas_premium_enterprise.png',
+    heroPosition: 'center',
+    heroSize: 'cover',
     aboutTitle: 'Gestão Inteligente de Fluxo Humano',
     aboutText: 'Controle quem entra e quem sai com precisão cirúrgica. Nossas soluções integram catracas de alta velocidade, reconhecimento facial com prova de vida e biometria digital para garantir que apenas pessoas autorizadas acessem seu patrimônio.',
     features: [

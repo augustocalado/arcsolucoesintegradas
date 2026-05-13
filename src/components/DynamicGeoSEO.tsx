@@ -39,7 +39,7 @@ export default function DynamicGeoSEO() {
 
       // Inject JSON-LD LocalBusiness
       const scriptId = 'json-ld-local-seo';
-      let script = document.getElementById(scriptId);
+      let script = document.getElementById(scriptId) as HTMLScriptElement | null;
       if (!script) {
         script = document.createElement('script');
         script.id = scriptId;
