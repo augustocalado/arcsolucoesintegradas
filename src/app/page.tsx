@@ -24,6 +24,7 @@ export default function Home() {
               { title: 'Antenas Antifurto', desc: 'Soluções EAS discretas e modernas, com alta taxa de detecção para redução drástica de perdas em loja.', icon: <Radio size={32} />, link: '/servicos/antenas-antifurto' },
               { title: 'Controle de Acesso', desc: 'Gestão de fluxo corporativo com catracas, biometria e softwares centralizados para múltiplas filiais.', icon: <Lock size={32} />, link: '/servicos/controle-de-acesso' },
               { title: 'Manutenção Preventiva', desc: 'Rotinas rigorosas de inspeção para garantir 100% de disponibilidade dos seus equipamentos de segurança.', icon: <Wrench size={32} />, link: '/servicos/manutencao-preventiva' },
+              { title: 'Cabeamento Estruturado', desc: 'Infraestrutura de rede robusta e certificada para suporte a sistemas críticos de segurança e dados.', icon: <Cpu size={32} />, link: '/servicos/infraestrutura-de-redes' },
               { title: 'Inteligência de Varejo', desc: 'Integração de dados de fluxo e mapas de calor para otimização de layout de loja e inteligência de negócios.', icon: <Map size={32} />, link: '/servicos/seguranca-para-redes-varejistas' }
             ].map((service, index) => (
               <div key={index} className="premium-card">
@@ -71,7 +72,13 @@ export default function Home() {
               </div>
             </div>
 
-
+            <div className="premium-card" style={{ padding: 0, overflow: 'hidden' }}>
+              <img src="/images/monitor_cftv_1777417935507.png" alt="Monitoramento CFTV IA" style={{ width: '100%', height: '250px', objectFit: 'cover' }} />
+              <div style={{ padding: '2rem' }}>
+                <h3 style={{ fontSize: '1.25rem', marginBottom: '0.5rem', color: 'var(--c-dark-blue)' }}>CFTV e Analíticos de IA</h3>
+                <p style={{ color: 'var(--c-metallic)', fontSize: '0.9rem' }}>Monitoramento inteligente com reconhecimento facial e análise de comportamento para segurança proativa.</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
