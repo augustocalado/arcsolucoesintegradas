@@ -23,7 +23,7 @@ export default function Servicos() {
       title: 'Sistemas Antifurto (EAS)', 
       desc: 'Tecnologias AM, RF e RFID para proteção de mercadorias. Antenas discretas, etiquetas de alto padrão e integração com sistemas de gestão da loja para minimizar furtos internos e externos.', 
       icon: <Radio size={48} />,
-      image: '/images/antena_ARC TECH_security_1777418676760.png'
+      image: '/images/premium_antena_antifurto_arc_tech.png'
     },
     { 
       id: 'controle-de-acesso',
