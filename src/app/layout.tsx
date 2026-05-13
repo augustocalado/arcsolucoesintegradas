@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import './globals.css';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import DynamicGeoSEO from '@/components/DynamicGeoSEO';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://arcsolucoesintegradas.com.br'),
@@ -54,6 +55,7 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <body>
+        <DynamicGeoSEO />
         <Header />
         <main style={{ minHeight: '100vh' }}>
           {children}

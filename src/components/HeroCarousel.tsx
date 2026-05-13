@@ -47,6 +47,23 @@ const defaultBanners: Banner[] = [
 export default function HeroCarousel() {
   const [current, setCurrent] = useState(0);
   const [banners, setBanners] = useState<Banner[]>(defaultBanners);
+  const [city, setCity] = useState('');
+
+  useEffect(() => {
+    const savedCity = localStorage.getItem('site_target_city');
+    if (savedCity) {
+      setCity(savedCity);
+      // Update first banner title with city
+      setBanners(prev => {
+        const newBanners = [...prev];
+        newBanners[0] = {
+          ...newBanners[0],
+          title: `Proteção inteligente para Varejo em ${savedCity}`
+        };
+        return newBanners;
+      });
+    }
+  }, []);
 
   // Auto-advance
   useEffect(() => {

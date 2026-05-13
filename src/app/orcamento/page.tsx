@@ -1,13 +1,16 @@
-import React from 'react';
-import type { Metadata } from 'next';
+'use client';
+
+import React, { useState, useEffect } from 'react';
 import { Send, MapPin, Phone, Mail } from 'lucide-react';
 
-export const metadata: Metadata = {
-  title: 'Solicitar Orçamento | ARC TECH',
-  description: 'Fale com nossos especialistas comerciais e receba uma proposta personalizada para a segurança da sua empresa.',
-};
-
 export default function Orcamento() {
+  const [city, setCity] = useState('');
+
+  useEffect(() => {
+    const savedCity = localStorage.getItem('site_target_city');
+    if (savedCity) setCity(savedCity);
+  }, []);
+
   return (
     <>
       <section style={{ padding: '8rem 0 6rem 0', background: 'var(--c-bg-light)', borderBottom: '1px solid var(--c-border-light)' }}>
@@ -16,8 +19,12 @@ export default function Orcamento() {
             
             {/* Formulario */}
             <div className="premium-card" style={{ padding: '3.5rem' }}>
-              <h1 style={{ fontSize: '2.5rem', marginBottom: '1rem', color: 'var(--c-dark-blue)' }}>Solicitar <span className="text-primary">Orçamento</span></h1>
-              <p style={{ color: 'var(--c-metallic)', marginBottom: '2.5rem' }}>Preencha os dados abaixo e nosso time de engenharia comercial entrará em contato em até 24 horas úteis.</p>
+              <h1 style={{ fontSize: '2.5rem', marginBottom: '1rem', color: 'var(--c-dark-blue)' }}>
+                Solicitar <span className="text-primary">Orçamento {city ? `em ${city}` : ''}</span>
+              </h1>
+              <p style={{ color: 'var(--c-metallic)', marginBottom: '2.5rem' }}>
+                Preencha os dados abaixo e nosso time técnico especializado em {city || 'todo o Brasil'} entrará em contato em até 24 horas úteis.
+              </p>
               
               <form style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
                 <div className="grid grid-cols-2" style={{ gap: '1.5rem' }}>
