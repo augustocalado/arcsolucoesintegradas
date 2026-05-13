@@ -193,6 +193,23 @@ const seoPages: Record<string, {
       'SLA unificado em todo o território nacional',
       'Logística reversa e manutenção programada centralizada'
     ]
+  },
+  'infraestrutura-de-redes': {
+    title: 'Instalação de Cabeamento Estruturado e Redes | ARC TECH',
+    desc: 'Empresa especializada em cabeamento estruturado Cat6, Cat6a e Fibra Óptica. Projetos de redes para empresas com certificação e organização de racks.',
+    h1: 'Cabeamento Estruturado e Infraestrutura de Redes',
+    subtitle: 'A base sólida para sua tecnologia. Projetos de rede certificados para alta performance e confiabilidade.',
+    keywords: 'cabeamento estruturado, infraestrutura de redes, rede cat6, certificação de rede, organização de rack, fibra óptica empresarial',
+    schema: 'Service',
+    aboutTitle: 'Conectividade Enterprise de Alta Performance',
+    aboutText: 'Um sistema de segurança só é tão forte quanto a rede que o sustenta. Nossos projetos de cabeamento estruturado seguem normas internacionais (TIA/EIA), garantindo que sua infraestrutura de CFTV, Controle de Acesso e Dados opere sem gargalos e com máxima redundância.',
+    features: [
+      'Lançamento e conectorização de cabos Cat6 e Cat6a',
+      'Fusão e terminação de fibras ópticas de alta velocidade',
+      'Certificação de pontos com emissão de relatórios técnicos',
+      'Montagem e organização profissional de Racks e Patch Panels',
+      'Identificação e mapeamento completo da rede lógica'
+    ]
   }
 };
 
