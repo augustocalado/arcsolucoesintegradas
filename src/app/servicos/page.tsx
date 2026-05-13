@@ -30,7 +30,14 @@ export default function Servicos() {
       title: 'Controle de Acesso Enterprise', 
       desc: 'Gestão completa de entradas e saídas através de biometria, reconhecimento facial, catracas e torniquetes. Softwares centralizados para múltiplos sites com controle de visitantes e terceiros.', 
       icon: <Lock size={48} />,
-      image: '/images/catracas_marisa_1777418461276.png'
+      image: '/images/catracas_premium_enterprise.png'
+    },
+    { 
+      id: 'infraestrutura-de-redes',
+      title: 'Cabeamento Estruturado e Redes', 
+      desc: 'Projetos de infraestrutura lógica certificados seguindo normas TIA/EIA. Cabeamento Cat6, Cat6a e Fibra Óptica para garantir a base de dados dos seus sistemas críticos.', 
+      icon: <ShieldAlert size={48} />,
+      image: '/images/tecnico_clean_1777418478324.png'
     },
     { 
       id: 'manutencao-preventiva',
