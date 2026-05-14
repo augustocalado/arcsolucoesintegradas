@@ -30,7 +30,7 @@ export default function Servicos() {
       title: 'Controle de Acesso Enterprise', 
       desc: 'Gestão completa de entradas e saídas através de biometria, reconhecimento facial, catracas e torniquetes. Softwares centralizados para múltiplos sites com controle de visitantes e terceiros.', 
       icon: <Lock size={48} />,
-      image: '/images/catracas_premium_enterprise.png'
+      image: '/images/catracas_clean.png'
     },
     { 
       id: 'infraestrutura-de-redes',

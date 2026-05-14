@@ -45,7 +45,7 @@ export default function Orcamento() {
                   </div>
                   <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
                     <label style={{ fontSize: '0.875rem', fontWeight: 600, color: 'var(--c-dark-blue)' }}>Telefone / WhatsApp *</label>
-                    <input type="tel" required style={{ width: '100%', padding: '1rem', background: 'var(--c-white)', border: '1px solid var(--c-border-light)', borderRadius: '8px', color: 'var(--c-dark-blue)', outline: 'none' }} placeholder="(11) 99999-9999" />
+                    <input type="tel" required style={{ width: '100%', padding: '1rem', background: 'var(--c-white)', border: '1px solid var(--c-border-light)', borderRadius: '8px', color: 'var(--c-dark-blue)', outline: 'none' }} placeholder="(11) 97309-8174" />
                   </div>
                 </div>
 

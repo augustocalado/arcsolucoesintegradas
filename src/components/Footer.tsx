@@ -57,11 +57,11 @@ export default function Footer() {
           <ul style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
             <li style={{ display: 'flex', gap: '0.5rem', alignItems: 'center', color: 'var(--c-metallic-light)', fontSize: '0.875rem' }}>
               <Phone size={16} style={{ color: 'var(--c-neon-blue)' }} />
-              <span>(11) 99893-7891</span>
+              <span>(11) 97309-8174</span>
             </li>
             <li style={{ display: 'flex', gap: '0.5rem', alignItems: 'center', color: 'var(--c-metallic-light)', fontSize: '0.875rem' }}>
               <Phone size={16} style={{ color: 'var(--c-neon-blue)' }} />
-              <span>(11) 99893-7891</span>
+              <span>(11) 97309-8174</span>
             </li>
             <li style={{ display: 'flex', gap: '0.5rem', alignItems: 'center', color: 'var(--c-metallic-light)', fontSize: '0.875rem' }}>
               <Mail size={16} style={{ color: 'var(--c-neon-blue)' }} />

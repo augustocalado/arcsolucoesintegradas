@@ -80,7 +80,7 @@ export default function CFTVInteligentePage() {
           </div>
 
           <div style={{ marginTop: '4rem', textAlign: 'center' }}>
-            <Link href="https://wa.me/5511998937891" target="_blank" rel="noreferrer" className="btn btn-primary" style={{ display: 'inline-flex', padding: '1.25rem 3rem', fontSize: '1.25rem' }}>
+            <Link href="https://wa.me/5511973098174" target="_blank" rel="noreferrer" className="btn btn-primary" style={{ display: 'inline-flex', padding: '1.25rem 3rem', fontSize: '1.25rem' }}>
               Falar com Especialista agora no WhatsApp
             </Link>
           </div>

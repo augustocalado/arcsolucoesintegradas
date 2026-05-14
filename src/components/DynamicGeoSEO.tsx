@@ -54,7 +54,7 @@ export default function DynamicGeoSEO() {
         "image": "https://arcsolucoesintegradas.com.br/logo.png",
         "@id": "https://arcsolucoesintegradas.com.br",
         "url": "https://arcsolucoesintegradas.com.br",
-        "telephone": "+5511999999999",
+        "telephone": "+5511973098174",
         "address": {
           "@type": "PostalAddress",
           "streetAddress": "Atendimento Regional",

@@ -250,7 +250,7 @@ export default async function ServiceSlugPage({ params }: { params: Promise<{ sl
         "addressRegion": "SP",
         "addressCountry": "BR"
       },
-      "telephone": "+5511998937891",
+      "telephone": "+5511973098174",
       "url": "https://arcsolucoesintegradas.com.br"
     },
     "areaServed": {
@@ -333,7 +333,7 @@ export default async function ServiceSlugPage({ params }: { params: Promise<{ sl
                 <p style={{ color: 'var(--c-metallic)', fontSize: '1rem', lineHeight: 1.6 }}>Qual o tempo de implantação? Como funciona a garantia e o SLA? Fale com um de nossos consultores para entender todos os detalhes operacionais e técnicos do projeto.</p>
               </div>
 
-              <Link href="https://wa.me/5511998937891" target="_blank" rel="noreferrer" className="btn btn-primary" style={{ display: 'flex', marginTop: '2rem', width: '100%', justifyContent: 'center', fontSize: '1.125rem', padding: '1rem' }}>
+              <Link href="https://wa.me/5511973098174" target="_blank" rel="noreferrer" className="btn btn-primary" style={{ display: 'flex', marginTop: '2rem', width: '100%', justifyContent: 'center', fontSize: '1.125rem', padding: '1rem' }}>
                 Falar com Especialista agora
               </Link>
             </div>
