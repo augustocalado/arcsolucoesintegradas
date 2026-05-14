@@ -37,7 +37,7 @@ export default function Servicos() {
       title: 'Cabeamento Estruturado e Redes', 
       desc: 'Projetos de infraestrutura lógica certificados seguindo normas TIA/EIA. Cabeamento Cat6, Cat6a e Fibra Óptica para garantir a base de dados dos seus sistemas críticos.', 
       icon: <ShieldAlert size={48} />,
-      image: '/images/tecnico_clean_1777418478324.png'
+      image: '/images/rack_servidor_cabling.png'
     },
     { 
       id: 'manutencao-preventiva',
