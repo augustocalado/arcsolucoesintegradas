@@ -2,7 +2,8 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
-import { Shield, Menu, X, Phone } from 'lucide-react';
+import Image from 'next/image';
+import { Menu, X, Phone } from 'lucide-react';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -11,10 +12,14 @@ export default function Header() {
     <header className="header">
       <div className="container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
         <Link href="/" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', position: 'relative', zIndex: 1001 }}>
-          <Shield color="var(--c-blue-primary)" size={32} />
-          <span style={{ fontSize: '1.75rem', fontWeight: 800, fontFamily: 'var(--font-heading)', color: 'var(--c-dark-blue)' }}>
-            C5S<span style={{ color: 'var(--c-blue-primary)' }}>.</span>
-          </span>
+          <Image 
+            src="/images/logo_arc.png" 
+            alt="ARC Soluções Integradas" 
+            width={160} 
+            height={55} 
+            style={{ height: '46px', width: 'auto', objectFit: 'contain' }} 
+            priority 
+          />
         </Link>
         
         {/* Desktop Nav */}

@@ -12,7 +12,7 @@ export default function Home() {
         minHeight: '100vh',
         display: 'flex',
         alignItems: 'center',
-        backgroundImage: 'url("/images/banner_farmacia_antenas.jpg")',
+        backgroundImage: 'url("/images/banner_instalacao_cameras.jpg")',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundAttachment: 'fixed',
@@ -25,15 +25,15 @@ export default function Home() {
           <div style={{ maxWidth: '800px' }} className="animate-fade-in">
             <div style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', padding: '0.4rem 1rem', borderRadius: '30px', background: 'rgba(255,255,255,0.1)', border: '1px solid rgba(255,255,255,0.2)', marginBottom: '2rem', backdropFilter: 'blur(10px)' }}>
               <ShieldCheck size={18} color="var(--c-neon-blue)" />
-              <span style={{ fontSize: '0.875rem', fontWeight: 600, color: 'var(--c-white)', letterSpacing: '0.5px' }}>Padrão Enterprise em Segurança Eletrônica</span>
+              <span style={{ fontSize: '0.875rem', fontWeight: 600, color: 'var(--c-white)', letterSpacing: '0.5px' }}>Padrão Enterprise em Instalação de CFTV & Segurança</span>
             </div>
             
             <h1 style={{ marginBottom: '1.5rem', color: 'var(--c-white)', lineHeight: '1.1' }}>
-              Proteção inteligente para <span style={{ color: 'var(--c-neon-blue)' }}>Redes Varejistas</span>
+              Instalação de Câmeras & <span style={{ color: 'var(--c-neon-blue)' }}>Segurança Eletrônica</span>
             </h1>
             
             <p style={{ fontSize: '1.25rem', color: 'rgba(255,255,255,0.8)', marginBottom: '3rem', maxWidth: '650px', lineHeight: '1.8' }}>
-              Implantação, manutenção e suporte técnico com cobertura nacional. Tecnologia de ponta para otimizar sua operação e zerar suas perdas.
+              CFTV inteligente, controle de acesso e infraestrutura técnica de ponta com cobertura nacional e padrão corporativo da ARC Soluções Integradas.
             </p>
             
             <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
@@ -41,8 +41,8 @@ export default function Home() {
                 Falar com Engenharia
                 <ArrowRight size={20} />
               </Link>
-              <Link href="https://wa.me/5511998937891" target="_blank" rel="noreferrer" className="btn btn-white" style={{ fontSize: '1.125rem', padding: '1rem 2.5rem' }}>
-                WhatsApp Corporativo
+              <Link href="https://wa.me/5511973098174" target="_blank" rel="noreferrer" className="btn btn-white" style={{ fontSize: '1.125rem', padding: '1rem 2.5rem' }}>
+                WhatsApp: (11) 97309-8174
               </Link>
             </div>
           </div>
@@ -86,6 +86,91 @@ export default function Home() {
             <img src="/images/logo_drogaria_total.png" alt="Drogaria Total" className="client-logo" style={{ height: '40px' }} />
             <img src="/images/logo_calvin_klein.png" alt="Calvin Klein" className="client-logo" style={{ height: '25px' }} />
             <img src="/images/logo_chanel.png" alt="Chanel" className="client-logo" style={{ height: '30px' }} />
+          </div>
+        </div>
+      </section>
+
+      {/* Seção de Marcas e Fabricantes Parceiros */}
+      <section style={{ padding: '4rem 0', background: 'var(--c-bg-light)', borderBottom: '1px solid var(--c-border-light)' }}>
+        <div className="container">
+          <div style={{ textAlign: 'center', marginBottom: '2.5rem' }}>
+            <div style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.75rem' }}>
+              <span style={{ width: '25px', height: '2px', background: 'var(--c-blue-primary)' }}></span>
+              <span style={{ color: 'var(--c-blue-primary)', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '1.5px', fontSize: '0.8rem' }}>
+                Ecossistema de Tecnologia
+              </span>
+              <span style={{ width: '25px', height: '2px', background: 'var(--c-blue-primary)' }}></span>
+            </div>
+            <h2 style={{ fontSize: '2.25rem', marginBottom: '0.75rem', color: 'var(--c-dark-blue)' }}>
+              Marcas e Fabricantes Homologados
+            </h2>
+            <p style={{ color: 'var(--c-metallic)', fontSize: '1rem', maxWidth: '650px', margin: '0 auto' }}>
+              Trabalhamos exclusivamente com fabricantes líderes de mercado para garantir equipamentos de alta durabilidade e confiabilidade técnica.
+            </p>
+          </div>
+
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', gap: '1.5rem' }}>
+            {[
+              { 
+                name: 'Intelbras', 
+                badge: 'CFTV & Redes', 
+                desc: 'Câmeras IP, NVRs, Switches POE e Controle de Acesso',
+                color: '#00A859'
+              },
+              { 
+                name: 'Hikvision', 
+                badge: 'Segurança & IA', 
+                desc: 'Câmeras térmicas, analíticos inteligentes e reconhecimento facial',
+                color: '#D42128'
+              },
+              { 
+                name: 'Steck', 
+                badge: 'Infraestrutura Elétrica', 
+                desc: 'Quadros, plugues, tomadas industriais e proteção elétrica',
+                color: '#E30613'
+              },
+            ].map((brand, i) => (
+              <div 
+                key={i} 
+                style={{ 
+                  background: 'var(--c-white)', 
+                  borderRadius: '12px', 
+                  padding: '1.75rem', 
+                  border: '1px solid var(--c-border-light)',
+                  boxShadow: '0 4px 12px rgba(0,0,0,0.03)',
+                  transition: 'all 0.3s ease',
+                  display: 'flex',
+                  flexDirection: 'column',
+                  justifyContent: 'space-between'
+                }}
+              >
+                <div>
+                  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1rem' }}>
+                    <h3 style={{ fontSize: '1.35rem', fontWeight: 800, color: 'var(--c-dark-blue)', letterSpacing: '-0.5px' }}>
+                      {brand.name}
+                    </h3>
+                    <span style={{ 
+                      fontSize: '0.7rem', 
+                      fontWeight: 700, 
+                      textTransform: 'uppercase', 
+                      padding: '0.25rem 0.6rem', 
+                      borderRadius: '20px', 
+                      background: 'rgba(0, 86, 210, 0.08)', 
+                      color: 'var(--c-blue-primary)',
+                      letterSpacing: '0.5px'
+                    }}>
+                      {brand.badge}
+                    </span>
+                  </div>
+                  <p style={{ color: 'var(--c-metallic)', fontSize: '0.875rem', lineHeight: '1.5', margin: 0 }}>
+                    {brand.desc}
+                  </p>
+                </div>
+                <div style={{ marginTop: '1.25rem', paddingTop: '1rem', borderTop: '1px solid #f0f2f5', display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--c-blue-primary)', fontSize: '0.8rem', fontWeight: 600 }}>
+                  <CheckCircle2 size={16} /> Equipamentos Homologados
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -180,7 +265,7 @@ export default function Home() {
           <div style={{ flex: 1 }}>
             <div style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', marginBottom: '1rem' }}>
               <span style={{ width: '30px', height: '2px', background: 'var(--c-blue-primary)' }}></span>
-              <span style={{ color: 'var(--c-blue-primary)', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '1px', fontSize: '0.875rem' }}>Por que a C5S?</span>
+              <span style={{ color: 'var(--c-blue-primary)', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '1px', fontSize: '0.875rem' }}>Por que a ARC Soluções Integradas?</span>
             </div>
             <h2 style={{ marginBottom: '1.5rem', lineHeight: '1.1' }}>Sua expansão suportada por uma infraestrutura <span className="text-primary">sólida.</span></h2>
             <p style={{ color: 'var(--c-metallic)', marginBottom: '2.5rem', fontSize: '1.125rem', lineHeight: '1.8' }}>
@@ -216,7 +301,7 @@ export default function Home() {
             <div style={{ position: 'relative', zIndex: 1, maxWidth: '800px', margin: '0 auto' }}>
               <h2 style={{ fontSize: '3rem', marginBottom: '1.5rem', color: 'var(--c-white)' }}>Otimize sua segurança e reduza custos operacionais.</h2>
               <p style={{ color: 'rgba(255,255,255,0.8)', fontSize: '1.25rem', marginBottom: '3rem' }}>
-                Agende uma reunião técnica com nossos engenheiros e descubra como grandes varejistas estão escalando suas operações com a C5S.
+                Agende uma reunião técnica com nossos engenheiros e descubra como grandes varejistas estão escalando suas operações com a ARC Soluções Integradas.
               </p>
               <div className="flex-responsive" style={{ justifyContent: 'center', gap: '1.5rem' }}>
                 <Link href="/orcamento" className="btn btn-primary" style={{ padding: '1rem 2.5rem', fontSize: '1.125rem' }}>

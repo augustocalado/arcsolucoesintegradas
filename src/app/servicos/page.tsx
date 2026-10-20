@@ -5,8 +5,8 @@ import { ArrowRight, Video, Lock, Radio, Map, Wrench, ShieldAlert } from 'lucide
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Soluções em Segurança | C5S Security',
-  description: 'Conheça nossas soluções enterprise: CFTV, Controle de Acesso, Antenas Antifurto e Manutenção para redes de varejo.',
+  title: 'Soluções em Segurança | ARC Soluções Integradas',
+  description: 'Conheça nossas soluções enterprise: CFTV, Controle de Acesso, Antenas Antifurto e Manutenção para empresas e redes de varejo.',
 };
 
 export default function Servicos() {

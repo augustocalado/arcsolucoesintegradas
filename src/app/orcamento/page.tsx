@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 import { Send, MapPin, Phone, Mail } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Solicitar Orçamento | C5S Security',
+  title: 'Solicitar Orçamento | ARC Soluções Integradas',
   description: 'Fale com nossos especialistas comerciais e receba uma proposta personalizada para a segurança da sua empresa.',
 };
 
@@ -87,9 +87,11 @@ export default function Orcamento() {
                     <Phone size={24} />
                   </div>
                   <div>
-                    <h4 style={{ fontSize: '1.125rem', marginBottom: '0.25rem', color: 'var(--c-dark-blue)' }}>Ligação Gratuita</h4>
-                    <p style={{ color: 'var(--c-metallic)', fontSize: '1.125rem', fontWeight: 600 }}>0800 123 4567</p>
-                    <p style={{ color: 'var(--c-metallic-light)', fontSize: '0.875rem' }}>Seg a Sex, das 8h às 18h</p>
+                    <h4 style={{ fontSize: '1.125rem', marginBottom: '0.25rem', color: 'var(--c-dark-blue)' }}>Telefone / WhatsApp</h4>
+                    <p style={{ color: 'var(--c-metallic)', fontSize: '1.125rem', fontWeight: 600 }}>
+                      <a href="https://wa.me/5511973098174" target="_blank" rel="noreferrer" style={{ color: 'inherit' }}>(11) 97309-8174</a>
+                    </p>
+                    <p style={{ color: 'var(--c-metallic-light)', fontSize: '0.875rem' }}>Atendimento ágil para todo o Brasil</p>
                   </div>
                 </div>
 
@@ -99,8 +101,10 @@ export default function Orcamento() {
                   </div>
                   <div>
                     <h4 style={{ fontSize: '1.125rem', marginBottom: '0.25rem', color: 'var(--c-dark-blue)' }}>E-mail Comercial</h4>
-                    <p style={{ color: 'var(--c-metallic)', fontSize: '1.125rem', fontWeight: 600 }}>comercial@c5s.com.br</p>
-                    <p style={{ color: 'var(--c-metallic-light)', fontSize: '0.875rem' }}>Retorno estimado: 4 horas</p>
+                    <p style={{ color: 'var(--c-metallic)', fontSize: '1.125rem', fontWeight: 600 }}>
+                      <a href="mailto:arcsolucoesintegradas@gmail.com" style={{ color: 'inherit' }}>arcsolucoesintegradas@gmail.com</a>
+                    </p>
+                    <p style={{ color: 'var(--c-metallic-light)', fontSize: '0.875rem' }}>Retorno estimado em até 24h</p>
                   </div>
                 </div>
 

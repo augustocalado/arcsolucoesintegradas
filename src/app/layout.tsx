@@ -4,13 +4,13 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
-  title: 'C5S Security | Segurança Eletrônica Corporativa Premium',
-  description: 'Especialistas em CFTV Corporativo, Controle de Acesso, Antenas Antifurto e Manutenção Preventiva para Redes Varejistas em nível nacional.',
+  title: 'ARC Soluções Integradas | Segurança Eletrônica Corporativa',
+  description: 'Especialistas em CFTV Corporativo, Controle de Acesso, Antenas Antifurto e Manutenção Preventiva para Redes Varejistas e Empresas em nível nacional.',
   openGraph: {
-    title: 'C5S Security | Segurança Corporativa',
+    title: 'ARC Soluções Integradas | Segurança Corporativa',
     description: 'Implantação, manutenção e suporte técnico com cobertura nacional e atendimento especializado para empresas e varejo.',
-    url: 'https://c5s.com.br',
-    siteName: 'C5S Security',
+    url: 'https://arcsolucoesintegradas.com.br',
+    siteName: 'ARC Soluções Integradas',
     locale: 'pt_BR',
     type: 'website',
   },
@@ -46,7 +46,7 @@ export default function RootLayout({
         
         {/* WhatsApp Floating Button */}
         <a 
-          href="https://wa.me/5511999999999" 
+          href="https://wa.me/5511973098174" 
           target="_blank" 
           rel="noreferrer"
           style={{

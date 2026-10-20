@@ -1,17 +1,21 @@
 import React from 'react';
 import Link from 'next/link';
-import { Shield, MapPin, Phone, Mail } from 'lucide-react';
+import Image from 'next/image';
+import { MapPin, Phone, Mail } from 'lucide-react';
 
 export default function Footer() {
   return (
     <footer style={{ backgroundColor: 'var(--c-dark-blue)', borderTop: '1px solid var(--c-blue-accent)', paddingTop: '4rem', paddingBottom: '2rem' }}>
       <div className="container grid grid-cols-4">
         <div>
-          <Link href="/" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '1rem' }}>
-            <Shield color="var(--c-neon-blue)" size={28} />
-            <span style={{ fontSize: '1.25rem', fontWeight: 800, fontFamily: 'var(--font-heading)', color: 'var(--c-white)' }}>
-              C5S<span style={{ color: 'var(--c-neon-blue)' }}>.</span>
-            </span>
+          <Link href="/" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '1.25rem' }}>
+            <Image 
+              src="/images/logo_arc_dark_bg.png" 
+              alt="ARC Soluções Integradas" 
+              width={160} 
+              height={55} 
+              style={{ height: '44px', width: 'auto', objectFit: 'contain' }} 
+            />
           </Link>
           <p style={{ color: 'var(--c-metallic-light)', fontSize: '0.875rem', marginBottom: '1.5rem' }}>
             Especialistas em Segurança Eletrônica Corporativa para Redes Varejistas. Atendimento nacional com padrão enterprise.
@@ -51,22 +55,18 @@ export default function Footer() {
           <ul style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
             <li style={{ display: 'flex', gap: '0.5rem', alignItems: 'center', color: 'var(--c-metallic-light)', fontSize: '0.875rem' }}>
               <Phone size={16} style={{ color: 'var(--c-neon-blue)' }} />
-              <span>(11) 99893-7891</span>
-            </li>
-            <li style={{ display: 'flex', gap: '0.5rem', alignItems: 'center', color: 'var(--c-metallic-light)', fontSize: '0.875rem' }}>
-              <Phone size={16} style={{ color: 'var(--c-neon-blue)' }} />
-              <span>(11) 99893-7891</span>
+              <a href="https://wa.me/5511973098174" target="_blank" rel="noreferrer" style={{ color: 'inherit' }}>(11) 97309-8174 (WhatsApp)</a>
             </li>
             <li style={{ display: 'flex', gap: '0.5rem', alignItems: 'center', color: 'var(--c-metallic-light)', fontSize: '0.875rem' }}>
               <Mail size={16} style={{ color: 'var(--c-neon-blue)' }} />
-              <span>comercial@c5ssecury.com.br</span>
+              <a href="mailto:arcsolucoesintegradas@gmail.com" style={{ color: 'inherit' }}>arcsolucoesintegradas@gmail.com</a>
             </li>
           </ul>
         </div>
       </div>
       
       <div className="container" style={{ marginTop: '3rem', paddingTop: '1.5rem', borderTop: '1px solid var(--c-blue-accent)', textAlign: 'center', color: 'var(--c-metallic)', fontSize: '0.75rem' }}>
-        <p>&copy; {new Date().getFullYear()} C5S Security. Todos os direitos reservados.</p>
+        <p>&copy; {new Date().getFullYear()} ARC Soluções Integradas. Todos os direitos reservados.</p>
       </div>
     </footer>
   );
