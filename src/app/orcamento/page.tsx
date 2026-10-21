@@ -113,8 +113,8 @@ export default function Orcamento() {
                     <MapPin size={24} />
                   </div>
                   <div>
-                    <h4 style={{ fontSize: '1.125rem', marginBottom: '0.25rem', color: 'var(--c-dark-blue)' }}>Matriz</h4>
-                    <p style={{ color: 'var(--c-metallic)', lineHeight: 1.6 }}>Av. Paulista, 1000 - Bela Vista<br/>São Paulo - SP, 01310-100</p>
+                    <h4 style={{ fontSize: '1.125rem', marginBottom: '0.25rem', color: 'var(--c-dark-blue)' }}>Sede / Escritório</h4>
+                    <p style={{ color: 'var(--c-metallic)', lineHeight: 1.6 }}>Alameda Yayá<br/>Guarulhos - SP</p>
                   </div>
                 </div>
               </div>

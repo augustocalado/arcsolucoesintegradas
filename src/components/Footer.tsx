@@ -61,6 +61,10 @@ export default function Footer() {
               <Mail size={16} style={{ color: 'var(--c-neon-blue)' }} />
               <a href="mailto:arcsolucoesintegradas@gmail.com" style={{ color: 'inherit' }}>arcsolucoesintegradas@gmail.com</a>
             </li>
+            <li style={{ display: 'flex', gap: '0.5rem', alignItems: 'flex-start', color: 'var(--c-metallic-light)', fontSize: '0.875rem' }}>
+              <MapPin size={16} style={{ color: 'var(--c-neon-blue)', marginTop: '2px', flexShrink: 0 }} />
+              <span>Alameda Yayá - Guarulhos, SP</span>
+            </li>
           </ul>
         </div>
       </div>
