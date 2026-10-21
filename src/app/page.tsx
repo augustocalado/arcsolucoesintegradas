@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { ArrowRight, ShieldCheck, Video, Radio, Lock, Wrench, Map, Clock, Cpu, CheckCircle2 } from 'lucide-react';
+import WhatsAppIcon from '@/components/WhatsAppIcon';
 
 export default function Home() {
   return (
@@ -42,7 +43,8 @@ export default function Home() {
                 <ArrowRight size={20} />
               </Link>
               <Link href="https://wa.me/5511973098174" target="_blank" rel="noreferrer" className="btn btn-white" style={{ fontSize: '1.125rem', padding: '1rem 2.5rem' }}>
-                WhatsApp: (11) 97309-8174
+                <WhatsAppIcon size={22} />
+                WhatsApp
               </Link>
             </div>
           </div>
